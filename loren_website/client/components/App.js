@@ -1,17 +1,16 @@
-import '../../public/style.css'
 import React from 'react'
 
 //IMPORT COMPONENTS
 import Home from './Home'
 import Nav from './Nav'
-
-const title = 'My Minimal React Webpack Babel Setup'
+import Projects from './Projects'
 
 const App = () => {
   return (
     <div>
       <Home />
       <Nav />
+      <Projects />
     </div>
   )
 }
