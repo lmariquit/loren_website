@@ -1,0 +1,28 @@
+#introContainer {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  background-color: lightblue; /* temporary */
+}
+
+#intro {
+  font-size: 29px;
+  color: green;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+#navContainer {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: lightpink; /* temporary */
+}
+
+.navItem {
+  color: blue;
+  padding: 0px 10px;
+}
