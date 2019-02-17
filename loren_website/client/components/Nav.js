@@ -2,12 +2,12 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <div id="navContainer">
-      <div className="navItem">PROJECTS</div>
-      <div className="navItem">SKILLS</div>
-      <div className="navItem">CONTACT</div>
-      <div className="navItem">|</div>
-      <div className="navItem">ABOUT</div>
+    <div id="nav-container">
+      <div className="nav-item">PROJECTS</div>
+      <div className="nav-item">SKILLS</div>
+      <div className="nav-item">CONTACT</div>
+      <div className="nav-item">|</div>
+      <div className="nav-item">ABOUT</div>
     </div>
   )
 }
