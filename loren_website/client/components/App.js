@@ -4,6 +4,7 @@ import React from 'react'
 import Home from './Home'
 import Nav from './Nav'
 import Projects from './Projects'
+import Skills from './Skills'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Home />
       <Nav />
       <Projects />
+      <Skills />
     </div>
   )
 }

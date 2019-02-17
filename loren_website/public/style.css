@@ -1,3 +1,4 @@
+/* HOME */
 #intro-container {
   display: flex;
   justify-content: center;
@@ -14,6 +15,7 @@
   font-family: Karla, Helvetica, sans-serif;
 }
 
+/* NAV */
 #nav-container {
   display: flex;
   justify-content: flex-end;
@@ -32,6 +34,7 @@
   font-family: Karla, Helvetica, sans-serif;
 }
 
+/* PROJECTS */
 #proj-container {
   display: flex;
   direction: column;
@@ -55,4 +58,42 @@
 #proj-desc {
   font-size: 15px;
   font-family: Karla, Helvetica, sans-serif;
+}
+
+/* SKILLS */
+#skills-container {
+  background-color: lightgoldenrodyellow;
+}
+
+#skills-title {
+  text-align: center;
+  font-size: 23px;
+  padding: 20px 20px;
+  font-weight: 700;
+  font-family: Karla, Helvetica, sans-serif;
+}
+
+table,
+th,
+td {
+  text-align: left;
+  font-family: Karla, Helvetica, sans-serif;
+}
+
+th {
+  font-size: 20px;
+}
+td {
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+table {
+  width: 800px;
+  padding-bottom: 20px;
+}
+
+div table {
+  margin-left: auto;
+  margin-right: auto;
 }
