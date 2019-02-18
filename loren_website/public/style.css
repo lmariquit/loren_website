@@ -148,3 +148,23 @@ form input[type='submit'] {
   text-align: center;
   font-family: Karla, Helvetica, sans-serif;
 }
+
+/* FOOTER */
+#footer-container {
+  background-color: rgb(194, 194, 194);
+  text-align: center;
+  height: 150px;
+}
+
+#icon-linkedin,
+#icon-github {
+  color: white;
+  font-size: 45px;
+  margin: 30px 20px;
+}
+
+#footer-container div {
+  color: white;
+  font-size: 10px;
+  /* margin: 10px 0px; */
+}
