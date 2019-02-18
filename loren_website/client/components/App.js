@@ -6,6 +6,7 @@ import Nav from './Nav'
 import Projects from './Projects'
 import Skills from './Skills'
 import Contact from './Contact'
+import Footer from './Footer'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Projects />
       <Skills />
       <Contact />
+      <Footer />
     </div>
   )
 }
