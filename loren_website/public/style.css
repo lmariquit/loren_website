@@ -2,16 +2,14 @@
 #intro-container {
   display: flex;
   justify-content: center;
-  height: 60vh;
-  background-color: lightblue; /* temporary */
+  /* height: 75vh; */
 }
 
 #intro {
   font-size: 29px;
-  color: white;
+  color: black;
   font-weight: 500;
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  padding: 35vh 0;
   font-family: Karla, Helvetica, sans-serif;
 }
 
@@ -22,13 +20,12 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: lightpink; /* temporary */
+  padding: 15px 0;
+  background-color: white; /* temporary */
 }
 
 .nav-item {
-  color: blue;
+  color: black;
   font-weight: 600;
   padding: 0px 10px;
   font-family: Karla, Helvetica, sans-serif;
@@ -62,13 +59,15 @@
 
 /* SKILLS */
 #skills-container {
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
+  /* height: 50vh; */
 }
 
 #skills-title {
   text-align: center;
   font-size: 23px;
   padding: 20px 20px;
+  padding-top: 50px;
   font-weight: 700;
   font-family: Karla, Helvetica, sans-serif;
 }
@@ -90,7 +89,7 @@ td {
 
 table {
   width: 800px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 div table {
@@ -101,12 +100,13 @@ div table {
 /* CONTACT */
 
 #contact-container {
+  background-color: lightgoldenrodyellow;
 }
 
 #contact-header {
   font-size: 20px;
   font-weight: 700;
-  margin-top: 75px;
+  padding-top: 50px;
   text-align: center;
   font-family: Karla, Helvetica, sans-serif;
 }
@@ -144,7 +144,7 @@ form input[type='submit'] {
 #contact-footer {
   font-size: 15px;
   margin-top: 0px;
-  margin-bottom: 25px;
+  padding-bottom: 50px;
   text-align: center;
   font-family: Karla, Helvetica, sans-serif;
 }
