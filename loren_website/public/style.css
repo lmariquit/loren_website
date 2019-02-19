@@ -7,7 +7,6 @@
 #intro-container {
   display: flex;
   justify-content: center;
-  /* height: 75vh; */
   background-color: rgb(102, 211, 102);
 }
 
@@ -207,5 +206,4 @@ form input[type='submit'] {
 #footer-container div {
   color: white;
   font-size: 10px;
-  /* margin: 10px 0px; */
 }
