@@ -57,14 +57,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(206, 206, 206, 0.158);
+  background-color: rgba(167, 167, 167, 0.384);
   margin-top: 100px;
   box-shadow: 10px 10px 35px grey;
 }
 
 #proj-img-container img {
-  vertical-align: baseline;
+  vertical-align: center;
   margin-top: auto;
+  width: 83%;
+  object-fit: scale-down;
 }
 
 #proj-info-container {
@@ -96,6 +98,7 @@
 #skills-container {
   background-color: rgb(102, 211, 102);
   box-shadow: 10px 3px 25px grey;
+  padding: 60px 0;
   /* height: 50vh; */
 }
 
@@ -141,11 +144,12 @@ div table {
 
 #contact-container {
   /* background-color: lightgoldenrodyellow; */
+  margin: 60px 0;
 }
 
 #contact-header {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 600;
   padding-top: 50px;
   text-align: center;
   font-family: Karla, Helvetica, sans-serif;
@@ -155,7 +159,7 @@ form {
   /* background-color: red; */
   padding: 35px 35px;
   margin: 0px auto;
-  width: 500px;
+  width: 700px;
 }
 
 form div label {
@@ -171,7 +175,7 @@ form input[type='email'] {
 
 form textarea {
   width: 70%;
-  height: 75px;
+  height: 120px;
 }
 
 form input[type='submit'] {

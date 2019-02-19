@@ -5,19 +5,19 @@ import SingleProject from './SingleProject'
 const projectsArr = [
   {
     name: 'identifi',
-    image: 'https://www.freeiconspng.com/uploads/no-image-icon-6.png',
+    image: 'identifi_screenshot.png',
     description:
       'An image recognition and local search mobile application that retreives the Yelp information of a storefront by simply taking a picture of it'
   },
   {
     name: 'FluffTrainer',
-    image: 'https://www.freeiconspng.com/uploads/no-image-icon-6.png',
+    image: 'flufftrainer_screenshot.png',
     description:
       'Are filler words ruining your presentations? FluffTrainer is your first step to eliminating those meaningless words and phrases from your vocabulary.'
   },
   {
     name: 'CodingBooks',
-    image: 'https://www.freeiconspng.com/uploads/no-image-icon-6.png',
+    image: 'codingbooks_screenshot.png',
     description: 'An E-Commerce website with various books for programers.'
   }
 ]
