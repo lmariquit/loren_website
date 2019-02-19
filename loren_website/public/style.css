@@ -15,7 +15,7 @@
   font-size: 29px;
   color: black;
   font-weight: 500;
-  padding: 35vh 0;
+  padding: 20vh 0;
   font-family: Karla, Helvetica, sans-serif;
 }
 
@@ -95,16 +95,18 @@
 
 /* SKILLS */
 #skills-container {
-  /* background-color: lightgoldenrodyellow; */
+  background-color: rgb(102, 211, 102);
+  box-shadow: 10px 3px 25px grey;
   /* height: 50vh; */
 }
 
 #skills-title {
   text-align: center;
-  font-size: 23px;
+  font-size: 35px;
   padding: 20px 20px;
   padding-top: 50px;
   font-weight: 700;
+  color: white;
   font-family: Karla, Helvetica, sans-serif;
 }
 
@@ -112,14 +114,17 @@ table,
 th,
 td {
   text-align: left;
+  color: white;
   font-family: Karla, Helvetica, sans-serif;
 }
 
 th {
-  font-size: 20px;
+  color: white;
+  font-size: 30px;
 }
 td {
-  font-size: 16px;
+  color: white;
+  font-size: 20px;
   padding-left: 15px;
 }
 
@@ -136,7 +141,7 @@ div table {
 /* CONTACT */
 
 #contact-container {
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
 }
 
 #contact-header {
