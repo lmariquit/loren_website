@@ -1,8 +1,17 @@
+/* to avoid horizonal scrolling */
+/* html,
+body {
+  overflow-x: hidden;
+  margin: 0 -9999rem;
+  padding: 0.25rem 9999rem;
+} */
+
 /* HOME */
 #intro-container {
   display: flex;
   justify-content: center;
   /* height: 75vh; */
+  background-color: rgb(102, 211, 102);
 }
 
 #intro {
@@ -22,6 +31,10 @@
   z-index: 1;
   padding: 15px 0;
   background-color: white; /* temporary */
+  border-bottom-style: solid;
+  border-width: 1px;
+  background-color: rgb(102, 211, 102);
+  box-shadow: 0 10px 5px -5px rgba(128, 128, 128, 0.37);
 }
 
 .nav-item {
@@ -32,12 +45,13 @@
 }
 
 /* PROJECTS */
-#proj-container {
+
+/* #proj-container {
   display: flex;
   direction: column;
   justify-content: space-evenly;
   height: 430px;
-  background-color: lightgreen; /* temporary */
+  background-color: lightgreen;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -55,6 +69,45 @@
 #proj-desc {
   font-size: 15px;
   font-family: Karla, Helvetica, sans-serif;
+} */
+
+#single-proj-container {
+  display: flex;
+  direction: column;
+}
+
+#proj-img-container {
+  width: 900px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(206, 206, 206, 0.158);
+  /* border-style: solid;
+  border-width: 1px; */
+  margin-top: 100px;
+  margin-left: 5vw;
+  box-shadow: 10px 10px 35px grey;
+}
+
+#proj-img-container img {
+  vertical-align: baseline;
+  margin-top: auto;
+}
+
+#proj-info {
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  direction: column;
+  align-self: center;
+  background: white;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 75px;
+  margin-left: 750px;
+  box-shadow: 10px 10px 35px grey;
 }
 
 /* SKILLS */
