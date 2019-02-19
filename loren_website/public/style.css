@@ -1,10 +1,7 @@
-/* to avoid horizonal scrolling */
-/* html,
-body {
-  overflow-x: hidden;
-  margin: 0 -9999rem;
-  padding: 0.25rem 9999rem;
-} */
+/* for full width divs */
+* {
+  margin: 0;
+}
 
 /* HOME */
 #intro-container {
@@ -73,7 +70,7 @@ body {
 
 #single-proj-container {
   display: flex;
-  direction: column;
+  flex-direction: column;
 }
 
 #proj-img-container {
@@ -95,19 +92,32 @@ body {
   margin-top: auto;
 }
 
-#proj-info {
+#proj-info-container {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   width: 400px;
   height: 200px;
-  display: flex;
-  direction: column;
-  align-self: center;
+  /* align-self: center; */
   background: white;
-  border-style: solid;
-  border-width: 1px;
-  margin-top: 75px;
+  /* border-style: solid;
+  border-width: 1px; */
+  margin-top: 275px;
   margin-left: 750px;
+  padding: 20px 20px;
   box-shadow: 10px 10px 35px grey;
+}
+
+#proj-title {
+  text-align: left;
+  font-size: 30px;
+  color: grey;
+  font-family: Karla, Helvetica, sans-serif;
+}
+
+#proj-desc {
+  font-size: 15px;
+  font-family: Karla, Helvetica, sans-serif;
 }
 
 /* SKILLS */
