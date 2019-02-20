@@ -6,16 +6,33 @@
 /* HOME */
 #intro-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: rgb(102, 211, 102);
+  padding: 150px 0;
 }
 
-#intro {
+.intro {
+  display: flex;
+  flex-direction: row;
   font-size: 29px;
   color: black;
   font-weight: 500;
-  padding: 20vh 0;
-  font-family: Karla, Helvetica, sans-serif;
+  font-family: 'Abel'; /* from font google API added in HTML */
+}
+
+#intro-name {
+  font-weight: 900;
+  margin: 0 10px;
+  font-size: 45px;
+  font-family: 'Actor'; /* from font google API added in HTML */
+}
+
+#intro-second-greeting {
+  padding: 10px 0;
+  font-size: 35px;
+  color: grey;
 }
 
 /* NAV */
@@ -37,7 +54,7 @@
   color: black;
   font-weight: 600;
   padding: 0px 10px;
-  font-family: Karla, Helvetica, sans-serif;
+  font-family: 'Abel'; /* from font google API added in HTML */
 }
 
 /* PROJECTS */
@@ -67,6 +84,7 @@
   margin-top: auto;
   width: 83%;
   object-fit: scale-down;
+  box-shadow: 0px 0px 35px grey;
 }
 
 #proj-info-container {
@@ -80,18 +98,19 @@
   margin-left: 25vw;
   padding: 20px 20px;
   box-shadow: 10px 10px 35px grey;
+  border-radius: 10px;
 }
 
 #proj-title {
   text-align: left;
   font-size: 30px;
   color: grey;
-  font-family: Karla, Helvetica, sans-serif;
+  font-family: 'Abel'; /* from font google API added in HTML */
 }
 
 #proj-desc {
   font-size: 15px;
-  font-family: Karla, Helvetica, sans-serif;
+  font-family: 'Abel'; /* from font google API added in HTML */
 }
 
 /* SKILLS */
@@ -109,7 +128,7 @@
   padding-top: 50px;
   font-weight: 700;
   color: white;
-  font-family: Karla, Helvetica, sans-serif;
+  font-family: 'Abel'; /* from font google API added in HTML */
 }
 
 table,
@@ -117,7 +136,7 @@ th,
 td {
   text-align: left;
   color: white;
-  font-family: Karla, Helvetica, sans-serif;
+  font-family: 'Abel'; /* from font google API added in HTML */
 }
 
 th {
@@ -152,7 +171,7 @@ div table {
   font-weight: 600;
   padding-top: 50px;
   text-align: center;
-  font-family: Karla, Helvetica, sans-serif;
+  font-family: 'Abel'; /* from font google API added in HTML */
 }
 
 form {
@@ -167,15 +186,18 @@ form div label {
   font-size: 15px;
   vertical-align: top;
   width: 90px;
+  font-family: 'Abel'; /* from font google API added in HTML */
 }
 
 form input[type='email'] {
   width: 70%;
+  font-family: 'Abel'; /* from font google API added in HTML */
 }
 
 form textarea {
   width: 70%;
   height: 120px;
+  font-family: 'Abel'; /* from font google API added in HTML */
 }
 
 form input[type='submit'] {
@@ -183,6 +205,7 @@ form input[type='submit'] {
   height: 25px;
   border-radius: 10px;
   cursor: pointer;
+  font-family: 'Abel'; /* from font google API added in HTML */
 }
 
 #contact-footer {
@@ -190,7 +213,7 @@ form input[type='submit'] {
   margin-top: 0px;
   padding-bottom: 50px;
   text-align: center;
-  font-family: Karla, Helvetica, sans-serif;
+  font-family: 'Abel'; /* from font google API added in HTML */
 }
 
 /* FOOTER */
@@ -210,4 +233,5 @@ form input[type='submit'] {
 #footer-container div {
   color: white;
   font-size: 10px;
+  font-family: 'Abel'; /* from font google API added in HTML */
 }
