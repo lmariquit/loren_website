@@ -28,10 +28,10 @@ window.addEventListener('scroll', bringmenu)
 function bringmenu() {
   // console.log(document.body.scrollTop, document.documentElement.scrollTop)
   if (document.documentElement.scrollTop < 359) {
-    document.getElementById('nav-name').style.opacity = 0
+    document.getElementById('nav-name').style.opacity = '0'
     document.getElementById('nav-container').style.boxShadow = '0 0 0'
   } else {
-    document.getElementById('nav-name').style.opacity = 1
+    document.getElementById('nav-name').style.opacity = '1'
     document.getElementById('nav-container').style.boxShadow =
       '0 10px 5px -5px rgba(128, 128, 128, 0.37)'
   }

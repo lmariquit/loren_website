@@ -7,16 +7,22 @@ import Projects from './Projects'
 import Skills from './Skills'
 import Contact from './Contact'
 import Footer from './Footer'
+import AboutModal from './AboutModal'
 
 const App = () => {
   return (
     <div>
-      <Home />
-      <Nav />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
+      <div id="main">
+        <Home />
+        <Nav />
+        <Projects />
+        <Skills />
+        <Contact />
+        <Footer />
+      </div>
+      <div id="modal">
+        <AboutModal />
+      </div>
     </div>
   )
 }
