@@ -1,6 +1,7 @@
 /* for full width divs */
 * {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 /* HOME */
@@ -40,7 +41,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  filter: blur(2px);
+  filter: blur(0.75px);
 }
 
 .intro {
@@ -71,17 +72,30 @@
   display: flex;
   justify-content: flex-end;
   position: sticky;
+  align-items: baseline;
   top: 0;
   z-index: 1;
   padding: 15px 0;
-  /* background: white; */
+  background: white;
+  -webkit-transition: box-shadow 1s;
+  transition: box-shadow 1s;
 }
 
 .nav-item {
   color: black;
   font-weight: 600;
   padding: 0px 10px;
+  text-decoration: none;
   font-family: 'Abel'; /* from font google API added in HTML */
+}
+
+#nav-name {
+  position: relative;
+  font-size: 25px;
+  opacity: 0;
+  margin-right: auto;
+  -webkit-transition: opacity 1.75s;
+  transition: opacity 1.75s;
 }
 
 /* PROJECTS */
