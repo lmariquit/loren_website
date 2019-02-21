@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AboutModal = ({ modalVisibility }) => {
+const AboutModal = ({ modalVisibility, toggleModal }) => {
   let modalstyle
   if (modalVisibility) {
     modalstyle = {
@@ -15,11 +15,12 @@ const AboutModal = ({ modalVisibility }) => {
       zIndex: '-5'
     }
   }
-  console.log('woeijfojwe', modalVisibility)
+  console.log('modal visibility?', modalVisibility)
 
   return (
     <div id="modal" style={modalstyle}>
       <div id="about-container">
+        <div id="bio-close">x</div>
         <div id="bio-container">
           <div id="bio-profile-pic" />
           <div id="bio-text-container">

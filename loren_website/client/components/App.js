@@ -45,7 +45,10 @@ class App extends Component {
           <Footer />
         </div>
         <div>
-          <AboutModal modalVisibility={this.state.modalVisibility} />
+          <AboutModal
+            modalVisibility={this.state.modalVisibility}
+            toggleModal={() => this.toggleModal()}
+          />
         </div>
       </div>
     )
