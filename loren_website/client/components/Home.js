@@ -4,14 +4,14 @@ const Home = () => {
   return (
     <div id="intro-container">
       <div id="intro-text">
-        <div className="intro">
-          <div id="intro-first-greeting">{`Hi, I\'m`}</div>
-          <div id="intro-name">{`Loren Mariquit`}</div>
-        </div>
+        <div
+          id="intro-first-greeting"
+          className="intro"
+        >{`Hi, I\'m Loren Mariquit`}</div>
         <div
           id="intro-second-greeting"
           className="intro"
-        >{`Welcome to my Website!`}</div>
+        >{`I'm an NYC Software Developer`}</div>
       </div>
     </div>
   )
