@@ -7,28 +7,41 @@
 /* HOME */
 #intro-container {
   display: flex;
-  height: 350px;
+  height: 450px;
   align-items: center;
   justify-content: center;
 }
 
 #intro-text {
   display: flex;
-  width: 470px;
+  flex-direction: column;
+  text-align: center;
+  width: 550px;
   padding: 20px 0;
   margin-bottom: 75px;
   position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-style: solid;
-  border-width: 1px;
-  background-color: rgba(128, 128, 128, 0.349);
+  /* border-style: solid; */
+  /* border-width: 1px; */
+  /* background-color: rgba(128, 128, 128, 0.349); */
   /* box-shadow: 5px 5px 5px 0px rgba(128, 128, 128, 0.37); */
 }
 
+.intro {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  font-size: 45px;
+  font-weight: 1100;
+  color: rgb(0, 0, 0);
+  font-family: 'Abel'; /* from font google API added in HTML */
+}
+
 #intro-container::before {
-  height: 350px;
+  height: 450px;
   position: absolute;
   z-index: -1;
   top: 0;
@@ -42,29 +55,6 @@
   background-repeat: no-repeat;
   background-position: center center;
   filter: blur(0.75px);
-}
-
-.intro {
-  display: flex;
-  flex-direction: row;
-  font-size: 29px;
-  color: white;
-  font-weight: 500;
-  font-family: 'Abel'; /* from font google API added in HTML */
-}
-
-#intro-name {
-  font-weight: 900;
-  margin: 0 10px;
-  font-size: 45px;
-  font-family: 'Actor'; /* from font google API added in HTML */
-  color: white;
-}
-
-#intro-second-greeting {
-  padding: 10px 0;
-  font-size: 35px;
-  color: white;
 }
 
 /* NAV */
