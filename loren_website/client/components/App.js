@@ -37,8 +37,8 @@ class App extends Component {
     return (
       <div>
         <div id="main">
-          <Home />
           <Nav toggleModal={() => this.toggleModal()} />
+          <Home />
           <Projects />
           <Skills />
           <Contact />
