@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import { findDOMNode } from 'react-dom'
 
 class Nav extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.navUnderline = this.navUnderline.bind(this)
+    this.aboutClick = this.aboutClick.bind(this)
     this.state = {
       scrollTop: 0,
-      modalVisible: false,
       noButton: 0,
       projectsButton: 0,
       skillsButton: 0,
@@ -22,7 +21,6 @@ class Nav extends Component {
   }
 
   componentDidUpdate() {
-    console.log('update')
     if (
       this.state.scrollTop > 355 &&
       this.state.scrollTop < 2354 &&
@@ -51,7 +49,13 @@ class Nav extends Component {
     this.setState({
       scrollTop: window.scrollY
     })
-    console.log(window.scrollY)
+    // console.log(window.scrollY)
+  }
+
+  aboutClick() {
+    console.log('CLIIIICKED', this.props)
+    this.props.toggleModal()
+    this.navUnderline('about')
   }
 
   navUnderline(section) {
@@ -128,18 +132,13 @@ class Nav extends Component {
         <div>|</div>
         <div
           className={this.state.aboutButton && 'nav-selected'}
-          onClick={() => this.navUnderline('about')}
+          onClick={() => this.aboutClick()}
         >
           ABOUT
         </div>
       </div>
     )
   }
-}
-
-function clicked() {
-  console.log('clicked')
-  document.getElementById('modal').style.display = 'block'
 }
 
 window.addEventListener('scroll', bringmenu)

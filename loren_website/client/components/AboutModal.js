@@ -1,8 +1,24 @@
 import React from 'react'
 
-const AboutModal = () => {
+const AboutModal = ({ modalVisibility }) => {
+  let modalstyle
+  if (modalVisibility) {
+    modalstyle = {
+      display: 'block',
+      backgroundColor: 'rgb(0, 0, 0)',
+      backgroundColor: 'rgba(0, 0, 0, 0.4)',
+      zIndex: '2'
+    }
+  } else {
+    modalstyle = {
+      display: 'none',
+      zIndex: '-5'
+    }
+  }
+  console.log('woeijfojwe', modalVisibility)
+
   return (
-    <div id="modal">
+    <div id="modal" style={modalstyle}>
       <div id="about-container">
         <div id="bio-container">
           <div id="bio-profile-pic" />
