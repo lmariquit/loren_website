@@ -16,11 +16,16 @@ const Nav = () => {
         CONTACT
       </a>
       <div className="nav-item">|</div>
-      <div className="nav-item" href="">
+      <div className="nav-item" onClick={() => clicked()}>
         ABOUT
       </div>
     </div>
   )
+}
+
+function clicked() {
+  console.log('clicked')
+  document.getElementById('modal').style.display = 'block'
 }
 
 window.addEventListener('scroll', bringmenu)
