@@ -1,9 +1,12 @@
 import React from 'react'
+
+import Home from './Home'
 import SingleProject from './SingleProject'
 
 //add new projects in the below array
 const projectsArr = [
   {
+    id: 0,
     name: 'identifi',
     image: 'identifi_phone.png',
     description:
@@ -20,6 +23,7 @@ const projectsArr = [
     }
   },
   {
+    id: 1,
     name: 'FluffTrainer',
     image: 'flufftrainer_screenshot.png',
     description:
@@ -31,6 +35,7 @@ const projectsArr = [
     }
   },
   {
+    id: 2,
     name: 'CodingBooks',
     image: 'codingbooks_screenshot.png',
     description: 'An E-Commerce website with various books for programers.',
@@ -43,19 +48,21 @@ const projectsArr = [
 ]
 
 const Projects = () => {
-  let keyIndex = 0
   return (
-    <div id="proj-container">
-      {projectsArr.map(project => (
-        <SingleProject
-          key={keyIndex++}
-          title={project.name}
-          image={project.image}
-          description={project.description}
-          techArr={project.tech}
-          color={project.color}
-        />
-      ))}
+    <div>
+      <Home />
+      <div id="proj-container">
+        {projectsArr.map(project => (
+          <SingleProject
+            key={project.id}
+            title={project.name}
+            image={project.image}
+            description={project.description}
+            techArr={project.tech}
+            color={project.color}
+          />
+        ))}
+      </div>
     </div>
   )
 }
