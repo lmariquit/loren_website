@@ -11,7 +11,7 @@ const Home = () => {
         <div
           id="intro-second-greeting"
           className="intro"
-        >{`I'm an NYC Software Developer`}</div>
+        >{`I'm a Software Developer`}</div>
       </div>
     </div>
   )
