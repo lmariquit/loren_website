@@ -31,8 +31,12 @@ const About = () => {
               </div>
             </div>
             <div id="bio-links">
-              <i id="bio-icon-linkedin" className="fa fa-linkedin" />
-              <i id="bio-icon-github" className="fa fa-github" />
+              <a href="https://linkedin.com/in/lorenmariquit/">
+                <i id="bio-icon-linkedin" className="fa fa-linkedin" />
+              </a>
+              <a href="https://github.com/lmariquit">
+                <i id="bio-icon-github" className="fa fa-github" />
+              </a>
             </div>
           </div>
         </div>

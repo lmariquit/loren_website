@@ -14,8 +14,6 @@
   z-index: 2;
   padding: 15px 25px;
   background: rgba(58, 58, 58, 0.877);
-  /* -webkit-trgba(85, 85, 85, 0.801)s; */
-  /* transition: box-shadow 1s; */
 }
 
 #nav-name,
@@ -24,10 +22,18 @@
 #nav-break {
   color: rgb(206, 206, 206);
   font-size: 17px;
-  font-weight: 200;
+  font-weight: 700;
   padding: 0px 15px;
   text-decoration: none;
   font-family: 'Abel';
+  transition: color 0.1s;
+}
+
+#nav-work:hover,
+#nav-about:hover {
+  color: grey;
+  transition: color 0.1s;
+  cursor: pointer;
 }
 
 #nav-name {
@@ -35,18 +41,13 @@
   font-size: 25px;
   margin-right: auto;
   top: -50px;
-  -webkit-transition: top 1s;
-  transition: top 1s;
+  opacity: 0;
+  -webkit-transition: top 1s, opacity 2s;
+  transition: top 1s, opacity 2s;
 }
 
 #nav-break {
   font-size: 25px;
-}
-
-.nav-selected {
-  font-size: 20px;
-  -webkit-transition: font-size 0.5s;
-  transition: font-size 0.5s;
 }
 
 /* HOME */
@@ -203,6 +204,7 @@
   font-size: 18px;
   font-family: 'Abel';
   opacity: 0;
+  transition: opacity 0.3s;
 }
 
 #proj-desc-container:hover {
@@ -296,6 +298,17 @@ form input[type='submit'] {
   color: white;
   font-size: 45px;
   margin: 30px 20px;
+  transition: color 0.5s;
+}
+
+#icon-github:hover {
+  color: rgb(36, 158, 42);
+  cursor: pointer;
+}
+
+#icon-linkedin:hover {
+  color: rgb(52, 116, 255);
+  cursor: pointer;
 }
 
 #footer-container div {
@@ -312,8 +325,6 @@ form input[type='submit'] {
   width: 90%;
   height: 100%;
   margin: 5% auto;
-  /* background-color: rgb(255, 246, 236); */
-  pointer-events: none;
 }
 
 #bio-container {
@@ -369,11 +380,23 @@ form input[type='submit'] {
   flex-direction: row;
   height: 50px;
   justify-content: center;
+  transition: color 0.5s;
 }
 
 #bio-links i {
-  font-size: 35px;
+  color: rgb(112, 112, 112);
+  font-size: 45px;
   padding: 0 10px;
+}
+
+#bio-icon-linkedin:hover {
+  color: rgb(52, 116, 255);
+  transition: color 0.5s;
+}
+
+#bio-icon-github:hover {
+  color: rgb(36, 158, 42);
+  transition: color 0.5s;
 }
 
 /* SKILLS */
@@ -418,13 +441,11 @@ form input[type='submit'] {
 #skills-backend:hover {
   background: white;
   box-shadow: 10px 3px 25px grey;
-  transition: box-shadow 0.5s;
   transition: box-shadow 0.5s, background 1.5s;
 }
 #skills-other:hover {
   background: white;
   box-shadow: 10px 3px 25px grey;
-  transition: box-shadow 0.5s;
   transition: box-shadow 0.5s, background 1.5s;
 }
 
