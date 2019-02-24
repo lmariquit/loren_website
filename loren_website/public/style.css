@@ -27,7 +27,7 @@
   font-weight: 200;
   padding: 0px 15px;
   text-decoration: none;
-  font-family: 'Abel'; /* from font google API added in HTML */
+  font-family: 'Abel';
 }
 
 #nav-name {
@@ -82,7 +82,7 @@
   font-size: 45px;
   font-weight: 1100;
   color: rgb(0, 0, 0);
-  font-family: 'Abel'; /* from font google API added in HTML */
+  font-family: 'Abel';
 }
 
 #intro-container::before {
@@ -164,7 +164,7 @@
   text-align: center;
   font-size: 35px;
   color: white;
-  font-family: 'Abel'; /* from font google API added in HTML */
+  font-family: 'Abel';
 }
 
 #proj-tech-container {
@@ -183,7 +183,7 @@
   margin: 2px 2px;
   color: white;
   background-color: rgba(255, 255, 255, 0.267);
-  font-family: 'Abel'; /* from font google API added in HTML */
+  font-family: 'Abel';
 }
 
 #proj-desc-container {
@@ -221,7 +221,7 @@
   width: 30%;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Abel'; /* from font google API added in HTML */
+  font-family: 'Abel';
   padding: 5px 40px;
   margin: 20px 0;
   margin-left: calc(50% - 15% - 40px);
@@ -244,7 +244,7 @@
   padding-top: 50px;
   font-weight: 700;
   color: white;
-  font-family: 'Abel'; /* from font google API added in HTML */
+  font-family: 'Abel';
 }
 
 table,
@@ -252,7 +252,7 @@ th,
 td {
   text-align: left;
   color: white;
-  font-family: 'Abel'; /* from font google API added in HTML */
+  font-family: 'Abel';
 }
 
 th {
@@ -286,7 +286,7 @@ div table {
   font-weight: 600;
   padding-top: 50px;
   text-align: center;
-  font-family: 'Abel'; /* from font google API added in HTML */
+  font-family: 'Abel';
 }
 
 form {
@@ -300,18 +300,18 @@ form div label {
   font-size: 15px;
   vertical-align: top;
   width: 90px;
-  font-family: 'Abel'; /* from font google API added in HTML */
+  font-family: 'Abel';
 }
 
 form input[type='email'] {
   width: 70%;
-  font-family: 'Abel'; /* from font google API added in HTML */
+  font-family: 'Abel';
 }
 
 form textarea {
   width: 70%;
   height: 120px;
-  font-family: 'Abel'; /* from font google API added in HTML */
+  font-family: 'Abel';
 }
 
 form input[type='submit'] {
@@ -319,7 +319,7 @@ form input[type='submit'] {
   height: 25px;
   border-radius: 10px;
   cursor: pointer;
-  font-family: 'Abel'; /* from font google API added in HTML */
+  font-family: 'Abel';
 }
 
 #contact-footer {
@@ -327,7 +327,7 @@ form input[type='submit'] {
   margin-top: 0px;
   padding-bottom: 50px;
   text-align: center;
-  font-family: 'Abel'; /* from font google API added in HTML */
+  font-family: 'Abel';
 }
 
 /* FOOTER */
@@ -347,89 +347,77 @@ form input[type='submit'] {
 #footer-container div {
   color: white;
   font-size: 10px;
-  font-family: 'Abel'; /* from font google API added in HTML */
+  font-family: 'Abel';
 }
 
-/* ABOUT MODAL */
-#modal {
-  /* display: none; */
-  position: fixed;
-  /* z-index: 2; */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  /* overflow: auto; */
-  /* background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4); */
-}
-
+/* ABOUT */
 #about-container {
-  /* display: block; */
-  /* flex-direction: row; */
+  display: flex;
+  flex-direction: row;
   position: block;
-  height: 70%;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* left: 50%; */
-  /* margin-left: -37.5%; */
-  /* top: 5%; */
+  width: 90%;
+  height: 100%;
   margin: 5% auto;
-  width: 75%;
-  background-color: rgb(255, 246, 236);
-  z-index: 3;
+  /* background-color: rgb(255, 246, 236); */
   pointer-events: none;
-}
-
-#bio-close {
-  position: absolute;
-  align-self: flex-end;
-  width: 75%;
-  text-align: end;
-  font-size: 50px;
 }
 
 #bio-container {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
-  /* position: relative; */
-  /* z-index: 2; */
+  height: 600px;
 }
 
 #bio-profile-pic {
   background-image: url('lm_profile.png');
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 20px;
   width: 50%;
   height: auto;
-  margin: 10px;
-  /* position: relative; */
-  /* z-index: 2; */
+  margin: 50px 50px;
+  box-shadow: 10px 3px 25px grey;
 }
 
 #bio-text-container {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
+  height: 500px;
   width: 50%;
-  height: auto;
-  margin-right: 10px;
-  font-family: 'Abel'; /* from font google API added in HTML */
-  /* z-index: 2; */
+  margin: 50px 0;
+  margin-right: 50px;
+  font-family: 'Abel';
 }
 
-#about-title {
+#bio-title {
+  height: 70px;
   font-size: 55px;
 }
 
 .bio-intro {
+  height: 30px;
   font-size: 24px;
+}
+
+#bio-summary {
+  height: 400px;
 }
 
 .bio {
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+#bio-links {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: center;
+}
+
+#bio-links i {
+  font-size: 35px;
+  padding: 0 10px;
 }

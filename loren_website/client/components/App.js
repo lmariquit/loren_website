@@ -4,11 +4,8 @@ import React, { Component } from 'react'
 import Home from './Home'
 import Nav from './Nav'
 import Routes from './Routes'
-import Projects from './Projects'
-import Skills from './Skills'
 import Contact from './Contact'
 import Footer from './Footer'
-import AboutModal from './AboutModal'
 
 class App extends Component {
   constructor() {
@@ -34,22 +31,15 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.modalVisibility, 'awoeihfhiowe')
     return (
       <div>
         <div id="main">
           <Nav toggleModal={() => this.toggleModal()} />
-          <Home />
           <Routes />
           <Contact />
           <Footer />
         </div>
-        <div>
-          <AboutModal
-            modalVisibility={this.state.modalVisibility}
-            toggleModal={() => this.toggleModal()}
-          />
-        </div>
+        <div />
       </div>
     )
   }

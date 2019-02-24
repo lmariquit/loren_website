@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <div id="skills-container">
       <div id="skills-title">SKILLS</div>
-      <table>
+      {/* <table>
         <tr>
           <th>Front End</th>
           <th>Back End</th>
@@ -40,7 +40,7 @@ const Skills = () => {
           <td />
           <td>Webpack</td>
         </tr>
-      </table>
+      </table> */}
     </div>
   )
 }

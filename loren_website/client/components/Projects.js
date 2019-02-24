@@ -1,4 +1,6 @@
 import React from 'react'
+
+import Home from './Home'
 import SingleProject from './SingleProject'
 
 //add new projects in the below array
@@ -47,17 +49,20 @@ const projectsArr = [
 
 const Projects = () => {
   return (
-    <div id="proj-container">
-      {projectsArr.map(project => (
-        <SingleProject
-          key={project.id}
-          title={project.name}
-          image={project.image}
-          description={project.description}
-          techArr={project.tech}
-          color={project.color}
-        />
-      ))}
+    <div>
+      <Home />
+      <div id="proj-container">
+        {projectsArr.map(project => (
+          <SingleProject
+            key={project.id}
+            title={project.name}
+            image={project.image}
+            description={project.description}
+            techArr={project.tech}
+            color={project.color}
+          />
+        ))}
+      </div>
     </div>
   )
 }
