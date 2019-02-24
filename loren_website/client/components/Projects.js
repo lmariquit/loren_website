@@ -5,7 +5,7 @@ import SingleProject from './SingleProject'
 const projectsArr = [
   {
     name: 'identifi',
-    image: 'identifi_screenshot.png',
+    image: 'identifi_phone.png',
     description:
       'An image recognition and local search mobile application that retreives the Yelp information of a storefront by simply taking a picture of it',
     tech: [
