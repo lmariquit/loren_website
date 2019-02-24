@@ -9,13 +9,25 @@
   display: flex;
   justify-content: flex-end;
   position: sticky;
-  align-items: baseline;
+  align-items: center;
   top: 0;
   z-index: 2;
-  padding: 15px 0;
+  padding: 15px 25px;
   background: rgba(58, 58, 58, 0.877);
   /* -webkit-trgba(85, 85, 85, 0.801)s; */
   /* transition: box-shadow 1s; */
+}
+
+#nav-name,
+#nav-work,
+#nav-about,
+#nav-break {
+  color: rgb(206, 206, 206);
+  font-size: 17px;
+  font-weight: 200;
+  padding: 0px 15px;
+  text-decoration: none;
+  font-family: 'Abel'; /* from font google API added in HTML */
 }
 
 #nav-name {
@@ -27,13 +39,8 @@
   transition: top 1s;
 }
 
-#nav-container a,
-#nav-container div {
-  color: rgb(206, 206, 206);
-  font-weight: 200;
-  padding: 0px 10px;
-  text-decoration: none;
-  font-family: 'Abel'; /* from font google API added in HTML */
+#nav-break {
+  font-size: 25px;
 }
 
 .nav-selected {
