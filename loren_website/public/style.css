@@ -229,52 +229,6 @@
   z-index: 1;
 }
 
-/* SKILLS */
-#skills-container {
-  background-color: rgb(102, 211, 102);
-  box-shadow: 10px 3px 25px grey;
-  padding: 60px 0;
-  /* height: 50vh; */
-}
-
-#skills-title {
-  text-align: center;
-  font-size: 35px;
-  padding: 20px 20px;
-  padding-top: 50px;
-  font-weight: 700;
-  color: white;
-  font-family: 'Abel';
-}
-
-table,
-th,
-td {
-  text-align: left;
-  color: white;
-  font-family: 'Abel';
-}
-
-th {
-  color: white;
-  font-size: 30px;
-}
-td {
-  color: white;
-  font-size: 20px;
-  padding-left: 15px;
-}
-
-table {
-  width: 800px;
-  padding-bottom: 50px;
-}
-
-div table {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* CONTACT */
 
 #contact-container {
@@ -420,4 +374,88 @@ form input[type='submit'] {
 #bio-links i {
   font-size: 35px;
   padding: 0 10px;
+}
+
+/* SKILLS */
+#skills-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 3px 25px grey;
+  padding: 20px 10%;
+  background-color: #ffecd5;
+}
+
+#skills-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 55px;
+  font-weight: 700;
+  font-family: 'Abel';
+}
+
+#skills-tech-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skills-area-container {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 0 25px;
+  margin: 0 10px;
+  width: 40%;
+  transition: box-shadow 0.5s, background 1.5s;
+}
+
+#skills-frontend:hover {
+  background: white;
+  box-shadow: 10px 3px 25px grey;
+  transition: box-shadow 0.5s, background 1.5s;
+}
+#skills-backend:hover {
+  background: white;
+  box-shadow: 10px 3px 25px grey;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, background 1.5s;
+}
+#skills-other:hover {
+  background: white;
+  box-shadow: 10px 3px 25px grey;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, background 1.5s;
+}
+
+.skills-area {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  font-family: 'Abel';
+  margin-bottom: 10px;
+  color: grey;
+}
+
+.single-skill-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70px;
+}
+
+.single-skill-image {
+  object-fit: scale-down;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 40px;
+  height: 100%;
+}
+
+.single-skill {
+  text-align: left;
+  font-size: 25px;
+  font-family: 'Abel';
+  padding: 0 20px;
 }
