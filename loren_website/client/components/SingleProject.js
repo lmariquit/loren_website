@@ -1,6 +1,7 @@
 import React from 'react'
 
 const SingleProject = ({ title, image, description, techArr, color }) => {
+  let techKeyIdx = 0
   return (
     <div id="proj-section-container">
       <div id="single-proj-container" style={color}>
@@ -11,7 +12,11 @@ const SingleProject = ({ title, image, description, techArr, color }) => {
           <div id="proj-title">{title}</div>
           <div id="proj-tech-container">
             {techArr.map(tech => {
-              return <div className="tech-bubble">{tech}</div>
+              return (
+                <div key={techKeyIdx++} className="tech-bubble">
+                  {tech}
+                </div>
+              )
             })}
           </div>
           <div className="proj-button">see Project</div>

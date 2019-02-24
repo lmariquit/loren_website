@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 //IMPORT COMPONENTS
 import Home from './Home'
 import Nav from './Nav'
+import Routes from './Routes'
 import Projects from './Projects'
 import Skills from './Skills'
 import Contact from './Contact'
@@ -39,8 +40,7 @@ class App extends Component {
         <div id="main">
           <Nav toggleModal={() => this.toggleModal()} />
           <Home />
-          <Projects />
-          <Skills />
+          <Routes />
           <Contact />
           <Footer />
         </div>
