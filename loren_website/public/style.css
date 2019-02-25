@@ -435,16 +435,16 @@ form input[type='submit'] {
 #skills-container {
   display: flex;
   flex-direction: column;
-  box-shadow: 10px 3px 25px grey;
+  /* box-shadow: 10px 3px 25px grey; */
   padding: 20px 10%;
-  background-color: #ffecd59c;
+  /* background-color: #ffecd59c; */
   opacity: 0;
   -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
   animation: 0.6s ease 0.1s normal forwards 1 fadein;
 }
 
 #skills-title {
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
   font-size: 55px;
   font-weight: 700;
@@ -485,7 +485,7 @@ form input[type='submit'] {
 }
 
 .skills-area {
-  text-align: center;
+  text-align: left;
   font-size: 45px;
   font-weight: 700;
   font-family: 'Abel';
