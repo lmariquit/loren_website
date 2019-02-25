@@ -1,6 +1,15 @@
 import React from 'react'
 
-const SingleProject = ({ title, image, description, techArr, color }) => {
+import ProjectButton from './ProjectButton'
+
+const SingleProject = ({
+  title,
+  image,
+  description,
+  techArr,
+  color,
+  buttonsArr
+}) => {
   let techKeyIdx = 0
   return (
     <div id="proj-section-container">
@@ -19,7 +28,11 @@ const SingleProject = ({ title, image, description, techArr, color }) => {
               )
             })}
           </div>
-          <div className="proj-button">see Project</div>
+          <div id="proj-button-container">
+            {buttonsArr.map(button => {
+              return <ProjectButton title={button.title} link={button.link} />
+            })}
+          </div>
         </div>
         <div id="proj-desc-container">
           <div id="proj-desc">{description}</div>

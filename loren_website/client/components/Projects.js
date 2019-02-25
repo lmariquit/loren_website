@@ -20,7 +20,17 @@ const projectsArr = [
     color: {
       backgroundImage:
         'linear-gradient(to right, rgb(0, 174, 255), rgb(70, 196, 255)'
-    }
+    },
+    buttons: [
+      {
+        title: 'SEE PROJECT',
+        link: 'https://www.youtube.com/watch?v=rd0a3vgH-dk'
+      },
+      {
+        title: 'SEE GITHUB',
+        link: 'https://github.com/clubjubjub'
+      }
+    ]
   },
   {
     id: 1,
@@ -32,7 +42,21 @@ const projectsArr = [
     color: {
       backgroundImage:
         'linear-gradient(to right, rgb(42, 255, 95), rgb(42, 199, 55)'
-    }
+    },
+    buttons: [
+      {
+        title: 'VISIT WEBSITE',
+        link: 'https://flufftrainer.herokuapp.com/'
+      },
+      {
+        title: 'SEE PROJECT',
+        link: 'https://www.youtube.com/watch?v=4AzsF48Uu6E'
+      },
+      {
+        title: 'SEE GITHUB',
+        link: 'https://github.com/lmariquit/fluffTrainer'
+      }
+    ]
   },
   {
     id: 2,
@@ -43,7 +67,17 @@ const projectsArr = [
     color: {
       backgroundImage:
         'linear-gradient(to right, rgb(125, 42, 128), rgb(123, 42, 199)'
-    }
+    },
+    buttons: [
+      {
+        title: 'VISIT WEBSITE',
+        link: 'https://codingbooks.herokuapp.com/'
+      },
+      {
+        title: 'SEE GITHUB',
+        link: 'https://github.com/spoontales/graceshopper'
+      }
+    ]
   }
 ]
 
@@ -60,6 +94,7 @@ const Projects = () => {
             description={project.description}
             techArr={project.tech}
             color={project.color}
+            buttonsArr={project.buttons}
           />
         ))}
       </div>
