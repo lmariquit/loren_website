@@ -23,11 +23,13 @@ const About = () => {
                 problems around the world.
               </div>
               <div className="bio">
-                What drives me toward programming are its endless possibilities.
-                Software engineers around the globe are creating new and amazing
-                things every day, and this inspires me to use my own creativity
-                and problem-solving abilities to build programs and tools to
-                help improve and advance the world.
+                In August 2018, I was accepted into Fullstack Academy in New
+                York and have gone through months of rigorous training in
+                Javascript and various other technologies pertinent to the tech
+                industry: Node.js, React, Git, GitHub, Express.js, Sequelize,
+                and much more. From here, I hope to join a team as a Fullstack
+                Developer where I can leverage both my passion and skills to
+                continue innovating.
               </div>
             </div>
             <div id="bio-links">
