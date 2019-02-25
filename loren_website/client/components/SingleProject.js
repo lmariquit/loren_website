@@ -11,6 +11,7 @@ const SingleProject = ({
   buttonsArr
 }) => {
   let techKeyIdx = 0
+  let buttonKeyIdx = 0
   return (
     <div id="proj-section-container">
       <div id="single-proj-container" style={color}>
@@ -30,7 +31,13 @@ const SingleProject = ({
           </div>
           <div id="proj-button-container">
             {buttonsArr.map(button => {
-              return <ProjectButton title={button.title} link={button.link} />
+              return (
+                <ProjectButton
+                  key={buttonKeyIdx++}
+                  title={button.title}
+                  link={button.link}
+                />
+              )
             })}
           </div>
         </div>

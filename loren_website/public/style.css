@@ -53,26 +53,36 @@
 /* HOME */
 #intro-container {
   display: flex;
-  height: 450px;
+  height: 370px;
   align-items: center;
   justify-content: center;
+  /* background-image: url('skyline.png'); */
+  /* background-size: cover; */
 }
 
 #intro-text {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 550px;
+  width: 430px;
   padding: 20px 0;
   margin-bottom: 75px;
   position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border-style: solid; */
-  /* border-width: 1px; */
-  /* background-color: rgba(128, 128, 128, 0.349); */
-  /* box-shadow: 5px 5px 5px 0px rgba(128, 128, 128, 0.37); */
+}
+
+#intro-first-greeting {
+  opacity: 0;
+  -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
+  animation: 0.7s ease 0s normal forwards 1 fadein;
+}
+
+#intro-second-greeting {
+  opacity: 0;
+  -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
+  animation: 0.7s ease 0s normal forwards 1 fadein;
 }
 
 .intro {
@@ -86,7 +96,7 @@
   font-family: 'Abel';
 }
 
-#intro-container::before {
+/* #intro-container::before {
   height: 450px;
   position: absolute;
   z-index: -1;
@@ -95,21 +105,22 @@
   left: 0;
   right: 0;
   content: '';
-  /* background-image: url('nyc_sunset.png');
+  background-image: url('skyline.png');
   object-fit: scale-down;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  filter: blur(0.75px); */
-}
+  filter: blur(0.75px);
+} */
 
 /* PROJECTS */
 #proj-container {
-  /* margin-bottom: 50px; */
+  opacity: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* background-color: rgb(212, 212, 212); */
+  -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
+  animation: 0.6s ease 0.1s normal forwards 1 fadein;
 }
 
 #proj-section-container {
@@ -209,7 +220,6 @@
   font-family: 'Abel';
   padding: 5px 2.5%;
   margin: 0 2.5%;
-  /* margin-left: calc(50% - 15% - 40px); */
   color: white;
   z-index: 1;
 }
@@ -252,6 +262,9 @@
 
 #contact-container {
   margin: 60px 0;
+  opacity: 0;
+  -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
+  animation: 0.6s ease 0.1s normal forwards 1 fadein;
 }
 
 #contact-header {
@@ -342,6 +355,9 @@ form input[type='submit'] {
   width: 90%;
   height: 100%;
   margin: 5% auto;
+  opacity: 0;
+  -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
+  animation: 0.6s ease 0.1s normal forwards 1 fadein;
 }
 
 #bio-container {
@@ -421,13 +437,16 @@ form input[type='submit'] {
 #skills-container {
   display: flex;
   flex-direction: column;
-  box-shadow: 10px 3px 25px grey;
+  /* box-shadow: 10px 3px 25px grey; */
   padding: 20px 10%;
-  background-color: #ffecd5;
+  /* background-color: #ffecd59c; */
+  opacity: 0;
+  -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
+  animation: 0.6s ease 0.1s normal forwards 1 fadein;
 }
 
 #skills-title {
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
   font-size: 55px;
   font-weight: 700;
@@ -468,7 +487,7 @@ form input[type='submit'] {
 }
 
 .skills-area {
-  text-align: center;
+  text-align: left;
   font-size: 45px;
   font-weight: 700;
   font-family: 'Abel';
@@ -497,4 +516,24 @@ form input[type='submit'] {
   font-size: 25px;
   font-family: 'Abel';
   padding: 0 20px;
+}
+
+/* FOR FADE IN */
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
