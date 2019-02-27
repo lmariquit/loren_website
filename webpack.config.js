@@ -39,8 +39,8 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: './public',
-    inline: true,
-    port: process.env.PORT || 8080
+    contentBase: './public'
+    // inline: true,
+    // port: process.env.PORT || 8080
   }
 }
