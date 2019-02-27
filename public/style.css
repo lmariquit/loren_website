@@ -433,7 +433,7 @@ form input[type='submit'] {
   padding: 50px 50px;
   margin: 50px 10px;
 }
-
+/*
 #skills-frontend:hover {
   background: rgba(255, 245, 108, 0.322);
   transition: background 1.5s;
@@ -445,7 +445,8 @@ form input[type='submit'] {
 #skills-other:hover {
   background: rgba(255, 245, 108, 0.322);
   transition: background 1.5s;
-}
+} */
+
 .skills-area {
   text-align: left;
   font-size: 100px;
@@ -791,9 +792,16 @@ form input[type='submit'] {
 
   .single-skill-image {
     width: 40px;
+    transition: width 0.5s;
   }
 
   .single-skill {
     font-size: 25px;
+    transition: font-size 0.5s;
+  }
+
+  .skills-area-container:hover .single-skill-image {
+    width: 50px;
+    transition: width 0.5s;
   }
 }
