@@ -78,6 +78,15 @@ const projectsArr = [
         link: 'https://github.com/spoontales/graceshopper'
       }
     ]
+  },
+  {
+    id: 3,
+    name: '',
+    image: '',
+    description: '',
+    tech: [],
+    color: {},
+    buttons: []
   }
 ]
 
