@@ -13,7 +13,7 @@ const SingleProject = ({
   let techKeyIdx = 0
   let buttonKeyIdx = 0
 
-  if (title !== '') {
+  if (title) {
     return (
       <div id="proj-section-container">
         <div id="single-proj-container" style={color}>
