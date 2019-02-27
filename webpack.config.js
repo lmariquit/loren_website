@@ -1,9 +1,9 @@
 const isDev = process.env.NODE_ENV === 'development'
-console.log(`
+// console.log(`
 
-PROCESS.ENV.PORT --> ${process.env.PORT}
+// PROCESS.ENV.PORT --> ${process.env.PORT}
 
-`)
+// `)
 
 module.exports = {
   mode: isDev ? 'development' : 'production',
@@ -39,8 +39,8 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: './public',
-    inline: true,
-    port: process.env.PORT || 8080
+    contentBase: './public'
+    // inline: true,
+    // port: process.env.PORT || 8080
   }
 }
