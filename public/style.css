@@ -198,9 +198,8 @@
   display: none;
 }
 
-#proj-desc-container:hover {
+#single-proj-container:hover #proj-desc-container {
   opacity: 1;
-  transition: opacity 0.3s;
 }
 
 #proj-inprogress-container {
@@ -436,19 +435,16 @@ form input[type='submit'] {
 }
 
 #skills-frontend:hover {
-  background: white;
-  box-shadow: 10px 3px 25px grey;
-  transition: box-shadow 0.5s, background 1.5s;
+  background: rgba(255, 245, 108, 0.322);
+  transition: background 1.5s;
 }
 #skills-backend:hover {
-  background: white;
-  box-shadow: 10px 3px 25px grey;
-  transition: box-shadow 0.5s, background 1.5s;
+  background: rgba(255, 245, 108, 0.322);
+  transition: background 1.5s;
 }
 #skills-other:hover {
-  background: white;
-  box-shadow: 10px 3px 25px grey;
-  transition: box-shadow 0.5s, background 1.5s;
+  background: rgba(255, 245, 108, 0.322);
+  transition: background 1.5s;
 }
 .skills-area {
   text-align: left;
@@ -781,23 +777,7 @@ form input[type='submit'] {
     padding: 0 25px;
     margin: 0 10px;
     width: 40%;
-    transition: box-shadow 0.5s, background 1.5s;
-  }
-
-  #skills-frontend:hover {
-    background: white;
-    box-shadow: 10px 3px 25px grey;
-    transition: box-shadow 0.5s, background 1.5s;
-  }
-  #skills-backend:hover {
-    background: white;
-    box-shadow: 10px 3px 25px grey;
-    transition: box-shadow 0.5s, background 1.5s;
-  }
-  #skills-other:hover {
-    background: white;
-    box-shadow: 10px 3px 25px grey;
-    transition: box-shadow 0.5s, background 1.5s;
+    transition: background 1.5s;
   }
 
   .skills-area {

@@ -16,10 +16,10 @@ const About = () => {
             <div id="bio-summary">
               <div className="bio">
                 Before I was a developer, I had a background in finance. Working
-                at a bank, I taught myself to program in VBA and would
-                eventually realize that innovation through programming was my
-                passion. I thus decided to shift the direction of my career to
-                focus on creating tools that provide creative solutions to
+                at an investment bank, I taught myself to program in VBA and
+                would eventually realize that innovation through programming was
+                my passion. I thus decided to shift the direction of my career
+                to focus on creating tools that provide creative solutions to
                 problems around the world.
               </div>
               <div className="bio">
