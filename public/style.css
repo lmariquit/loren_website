@@ -433,19 +433,6 @@ form input[type='submit'] {
   padding: 50px 50px;
   margin: 50px 10px;
 }
-/*
-#skills-frontend:hover {
-  background: rgba(255, 245, 108, 0.322);
-  transition: background 1.5s;
-}
-#skills-backend:hover {
-  background: rgba(255, 245, 108, 0.322);
-  transition: background 1.5s;
-}
-#skills-other:hover {
-  background: rgba(255, 245, 108, 0.322);
-  transition: background 1.5s;
-} */
 
 .skills-area {
   text-align: left;
