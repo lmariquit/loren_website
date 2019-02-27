@@ -307,9 +307,9 @@ form input[type='submit'] {
 
 #bio-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  height: 600px;
+  height: 2500px;
 }
 
 #bio-profile-pic {
@@ -317,41 +317,41 @@ form input[type='submit'] {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 5px;
-  width: 50%;
-  height: auto;
-  margin: 50px 50px;
+  width: 100%;
+  height: 30%;
+  /* height: auto; */
+  /* margin: 50px 50px; */
   box-shadow: 10px 3px 25px grey;
 }
 
 #bio-text-container {
   display: flex;
   flex-direction: column;
-  height: 500px;
-  width: 50%;
+  height: 50%;
+  width: 100%;
   margin: 50px 0;
-  margin-right: 50px;
+  /* margin-right: 50px; */
   font-family: 'Abel';
 }
 
 #bio-title {
-  height: 70px;
-  font-size: 55px;
+  /* height: 70px; */
+  font-size: 120px;
 }
 
 .bio-intro {
-  height: 30px;
-  font-size: 24px;
+  /* height: 30px; */
+  font-size: 60px;
   color: grey;
 }
 
 #bio-summary {
-  height: 400px;
+  /* height: 400px; */
+  font-size: 50px;
 }
 
 .bio {
-  font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 40px 0;
 }
 
 #bio-links {
@@ -364,8 +364,8 @@ form input[type='submit'] {
 
 #bio-links i {
   color: rgb(112, 112, 112);
-  font-size: 45px;
-  padding: 0 10px;
+  font-size: 150px;
+  padding: 40px 100px;
 }
 
 #bio-icon-linkedin:hover {
@@ -382,7 +382,8 @@ form input[type='submit'] {
 #skills-container {
   display: flex;
   flex-direction: column;
-  padding: 20px 10%;
+  padding: 50px 5%;
+  background-color: rgba(223, 223, 223, 0.678);
   opacity: 0;
   -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
   animation: 0.6s ease 0.1s normal forwards 1 fadein;
@@ -391,14 +392,14 @@ form input[type='submit'] {
 #skills-title {
   text-align: left;
   margin-bottom: 20px;
-  font-size: 55px;
+  font-size: 120px;
   font-weight: 700;
   font-family: 'Abel';
 }
 
 #skills-tech-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -407,31 +408,13 @@ form input[type='submit'] {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  padding: 0 25px;
-  margin: 0 10px;
-  width: 40%;
-  transition: box-shadow 0.5s, background 1.5s;
-}
-
-#skills-frontend:hover {
-  background: white;
-  box-shadow: 10px 3px 25px grey;
-  transition: box-shadow 0.5s, background 1.5s;
-}
-#skills-backend:hover {
-  background: white;
-  box-shadow: 10px 3px 25px grey;
-  transition: box-shadow 0.5s, background 1.5s;
-}
-#skills-other:hover {
-  background: white;
-  box-shadow: 10px 3px 25px grey;
-  transition: box-shadow 0.5s, background 1.5s;
+  padding: 50px 50px;
+  margin: 50px 10px;
 }
 
 .skills-area {
   text-align: left;
-  font-size: 45px;
+  font-size: 100px;
   font-weight: 700;
   font-family: 'Abel';
   margin-bottom: 10px;
@@ -442,7 +425,8 @@ form input[type='submit'] {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 70px;
+  height: 120px;
+  margin: 35px 0;
 }
 
 .single-skill-image {
@@ -450,15 +434,37 @@ form input[type='submit'] {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 40px;
+  width: 150px;
   height: 100%;
 }
 
 .single-skill {
   text-align: left;
-  font-size: 25px;
+  font-size: 75px;
   font-family: 'Abel';
   padding: 0 20px;
+}
+
+#skills-frontend.skills-area-container {
+  background-image: linear-gradient(
+    to right,
+    rgb(189, 255, 194),
+    rgb(222, 255, 221)
+  );
+}
+#skills-backend.skills-area-container {
+  background-image: linear-gradient(
+    to right,
+    rgb(231, 189, 255),
+    rgb(244, 221, 255)
+  );
+}
+#skills-other.skills-area-container {
+  background-image: linear-gradient(
+    to right,
+    rgb(199, 237, 255),
+    rgb(221, 244, 255)
+  );
 }
 
 /* FOR FADE IN */
@@ -481,7 +487,7 @@ form input[type='submit'] {
   }
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1025px) {
   /* NAV */
   #nav-container {
     display: flex;
@@ -883,12 +889,12 @@ form input[type='submit'] {
 
   #bio-summary {
     height: 400px;
+    font-size: 16px;
   }
 
   .bio {
     font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
   }
 
   #bio-links {
@@ -980,6 +986,7 @@ form input[type='submit'] {
     flex-direction: row;
     align-items: center;
     height: 70px;
+    margin: 0 0;
   }
 
   .single-skill-image {
