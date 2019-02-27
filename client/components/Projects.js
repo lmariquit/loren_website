@@ -3,7 +3,6 @@ import React from 'react'
 import Home from './Home'
 import SingleProject from './SingleProject'
 
-//add new projects in the below array
 const projectsArr = [
   {
     id: 0,
