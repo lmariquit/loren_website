@@ -96,9 +96,20 @@
   font-family: 'Abel';
 }
 
-#intro-summary {
-  height: 75px;
+#intro-summary-one {
+  /* height: 75px; */
+  justify-content: center;
   width: 90%;
+  font-size: 20px;
+  color: grey;
+  opacity: 0;
+  -webkit-animation: 1.3s ease 0.2s normal forwards 1 fadein;
+  animation: 1.3s ease 0.2s normal forwards 1 fadein;
+}
+
+#intro-summary-two {
+  /* height: 75px; */
+  width: 60%;
   font-size: 20px;
   color: grey;
   opacity: 0;
@@ -139,17 +150,17 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
-}
+} */
 
-#intro-container::after {
+/* #intro-container::after {
   content: '';
   height: 370px;
   position: absolute;
   z-index: -1;
-  top: 320px;
+  top: 150px;
   bottom: 0;
   left: 0;
-  right: -100px;
+  right: 0;
   transform: rotate(-20deg);
   background-image: url('controller.png');
   opacity: 0.7;
