@@ -189,8 +189,18 @@
   z-index: 1;
 }
 
+.proj-button:hover {
+  color: rgb(73, 73, 255);
+  background-color: rgba(255, 255, 255, 0.589);
+}
+
 #proj-desc-container {
   display: none;
+}
+
+#proj-desc-container:hover {
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 /* CONTACT */
@@ -255,7 +265,6 @@ form input[type='submit'] {
 
 #contact-footer {
   font-size: 35px;
-  margin-top: 0px;
   padding-bottom: 50px;
   text-align: center;
   font-family: 'Abel';
@@ -319,8 +328,6 @@ form input[type='submit'] {
   border-radius: 5px;
   width: 100%;
   height: 30%;
-  /* height: auto; */
-  /* margin: 50px 50px; */
   box-shadow: 10px 3px 25px grey;
 }
 
@@ -330,23 +337,19 @@ form input[type='submit'] {
   height: 50%;
   width: 100%;
   margin: 50px 0;
-  /* margin-right: 50px; */
   font-family: 'Abel';
 }
 
 #bio-title {
-  /* height: 70px; */
   font-size: 120px;
 }
 
 .bio-intro {
-  /* height: 30px; */
   font-size: 60px;
   color: grey;
 }
 
 #bio-summary {
-  /* height: 400px; */
   font-size: 50px;
 }
 
@@ -412,6 +415,21 @@ form input[type='submit'] {
   margin: 50px 10px;
 }
 
+#skills-frontend:hover {
+  background: white;
+  box-shadow: 10px 3px 25px grey;
+  transition: box-shadow 0.5s, background 1.5s;
+}
+#skills-backend:hover {
+  background: white;
+  box-shadow: 10px 3px 25px grey;
+  transition: box-shadow 0.5s, background 1.5s;
+}
+#skills-other:hover {
+  background: white;
+  box-shadow: 10px 3px 25px grey;
+  transition: box-shadow 0.5s, background 1.5s;
+}
 .skills-area {
   text-align: left;
   font-size: 100px;
@@ -445,28 +463,6 @@ form input[type='submit'] {
   padding: 0 20px;
 }
 
-#skills-frontend.skills-area-container {
-  background-image: linear-gradient(
-    to right,
-    rgb(189, 255, 194),
-    rgb(222, 255, 221)
-  );
-}
-#skills-backend.skills-area-container {
-  background-image: linear-gradient(
-    to right,
-    rgb(231, 189, 255),
-    rgb(244, 221, 255)
-  );
-}
-#skills-other.skills-area-container {
-  background-image: linear-gradient(
-    to right,
-    rgb(199, 237, 255),
-    rgb(221, 244, 255)
-  );
-}
-
 /* FOR FADE IN */
 
 @keyframes fadein {
@@ -490,21 +486,13 @@ form input[type='submit'] {
 @media screen and (min-width: 1025px) {
   /* NAV */
   #nav-container {
-    display: flex;
-    justify-content: flex-end;
-    position: sticky;
-    align-items: center;
-    top: 0;
-    z-index: 2;
     padding: 15px 25px;
-    background: rgba(58, 58, 58, 0.877);
   }
 
   #nav-name,
   #nav-work,
   #nav-about,
   #nav-break {
-    color: rgb(206, 206, 206);
     font-size: 17px;
     font-weight: 700;
     padding: 0px 15px;
@@ -521,10 +509,7 @@ form input[type='submit'] {
   }
 
   #nav-name {
-    position: relative;
     font-size: 25px;
-    margin-right: auto;
-    top: -50px;
     opacity: 0;
     -webkit-transition: top 1s, opacity 2s;
     transition: top 1s, opacity 2s;
@@ -535,47 +520,13 @@ form input[type='submit'] {
   }
 
   /* HOME */
-  #intro-container {
-    display: flex;
-    flex-direction: column;
-    height: 370px;
-    align-items: center;
-    justify-content: center;
-  }
 
   #intro-text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     width: 430px;
-    padding: 20px 0;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #intro-first-greeting {
-    opacity: 0;
-    -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
-    animation: 0.7s ease 0s normal forwards 1 fadein;
-  }
-
-  #intro-second-greeting {
-    opacity: 0;
-    -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
-    animation: 0.7s ease 0s normal forwards 1 fadein;
   }
 
   .intro {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    width: 100%;
     font-size: 45px;
-    font-weight: 1100;
-    color: rgb(0, 0, 0);
-    font-family: 'Abel';
   }
 
   #intro-summary-one {
@@ -601,62 +552,26 @@ form input[type='submit'] {
 
   /* PROJECTS */
   #proj-container {
-    opacity: 0;
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: normal;
-    align-items: center;
-    -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
-    animation: 0.6s ease 0.1s normal forwards 1 fadein;
   }
 
   #proj-section-container {
-    display: flex;
-    flex-direction: row;
     width: 49.5%;
-    height: 500px;
-    margin: 0.25% 0.25%;
-  }
-
-  #single-proj-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    border-radius: 5px;
-  }
-
-  #proj-img-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: auto;
   }
 
   #proj-img-container img {
-    vertical-align: center;
     max-width: 85%;
     max-height: 55%;
-    object-fit: cover;
-    box-shadow: 0px 0px 35px grey;
   }
 
   #proj-info-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 50%;
-    height: 100%;
-    justify-content: center;
     align-items: normal;
   }
 
   #proj-title {
-    text-align: center;
     font-size: 35px;
-    color: white;
-    font-family: 'Abel';
+    margin: 0 0;
   }
 
   #proj-tech-container {
@@ -679,38 +594,22 @@ form input[type='submit'] {
   }
 
   #proj-button-container {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     align-content: normal;
     height: 100px;
     width: 100%;
   }
 
   .proj-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-style: solid;
     border-width: 1px;
     border-radius: 15px;
     height: 25px;
     width: 35%;
-    text-align: center;
-    text-transform: uppercase;
     font-size: 16px;
-    font-family: 'Abel';
     padding: 5px 2.5%;
     margin: 0 2.5%;
-    color: white;
     background-color: none;
-    z-index: 1;
-  }
-
-  .proj-button:hover {
-    color: rgb(73, 73, 255);
-    background-color: rgba(255, 255, 255, 0.589);
   }
 
   #proj-desc-container {
@@ -733,147 +632,73 @@ form input[type='submit'] {
     transition: opacity 0.3s;
   }
 
-  #proj-desc-container:hover {
-    opacity: 1;
-    transition: opacity 0.3s;
-  }
-
   #proj-desc {
     padding: 60px 20px;
   }
 
   /* CONTACT */
 
-  #contact-container {
-    margin: 60px 0;
-    opacity: 0;
-    -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
-    animation: 0.6s ease 0.1s normal forwards 1 fadein;
-  }
-
   #contact-header {
     font-size: 30px;
-    font-weight: 600;
-    padding-top: 50px;
-    text-align: center;
-    font-family: 'Abel';
-  }
-
-  form {
-    padding: 35px 35px;
-    margin: 0px auto;
-    width: 700px;
   }
 
   form div label {
-    display: inline-block;
     font-size: 15px;
-    vertical-align: top;
     width: 90px;
-    font-family: 'Abel';
   }
 
   form input[type='email'] {
     font-size: 16px;
-    width: 70%;
     height: 25px;
-    font-family: 'Abel';
   }
 
   form textarea {
     font-size: 16px;
-    width: 70%;
     height: 120px;
-    font-family: 'Abel';
   }
 
   form input[type='submit'] {
     font-size: 16px;
-    width: 100%;
     height: 25px;
     border-radius: 10px;
-    cursor: pointer;
-    font-family: 'Abel';
   }
 
   #contact-footer {
     font-size: 15px;
-    margin-top: 0px;
-    padding-bottom: 50px;
-    text-align: center;
-    font-family: 'Abel';
   }
 
   /* FOOTER */
   #footer-container {
-    background-color: rgb(194, 194, 194);
-    text-align: center;
     height: 150px;
   }
 
   #icon-linkedin,
   #icon-github {
-    color: white;
     font-size: 45px;
     margin: 30px 20px;
-    transition: color 0.5s;
-  }
-
-  #icon-github:hover {
-    color: rgb(36, 158, 42);
-    cursor: pointer;
-  }
-
-  #icon-linkedin:hover {
-    color: rgb(52, 116, 255);
-    cursor: pointer;
   }
 
   #footer-container div {
-    color: white;
     font-size: 10px;
-    font-family: 'Abel';
   }
 
   /* ABOUT */
-  #about-container {
-    display: flex;
-    flex-direction: row;
-    position: block;
-    width: 90%;
-    height: 100%;
-    margin: 5% auto;
-    opacity: 0;
-    -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
-    animation: 0.6s ease 0.1s normal forwards 1 fadein;
-  }
 
   #bio-container {
-    display: flex;
     flex-direction: row;
-    width: 100%;
     height: 600px;
   }
 
   #bio-profile-pic {
-    background-image: url('lm_profile.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 5px;
     width: 50%;
     height: auto;
     margin: 50px 50px;
-    box-shadow: 10px 3px 25px grey;
   }
 
   #bio-text-container {
-    display: flex;
-    flex-direction: column;
     height: 500px;
     width: 50%;
-    margin: 50px 0;
     margin-right: 50px;
-    font-family: 'Abel';
   }
 
   #bio-title {
@@ -884,7 +709,6 @@ form input[type='submit'] {
   .bio-intro {
     height: 30px;
     font-size: 24px;
-    color: grey;
   }
 
   #bio-summary {
@@ -897,59 +721,25 @@ form input[type='submit'] {
     margin: 10px 0;
   }
 
-  #bio-links {
-    display: flex;
-    flex-direction: row;
-    height: 50px;
-    justify-content: center;
-    transition: color 0.5s;
-  }
-
   #bio-links i {
-    color: rgb(112, 112, 112);
     font-size: 45px;
     padding: 0 10px;
   }
 
-  #bio-icon-linkedin:hover {
-    color: rgb(52, 116, 255);
-    transition: color 0.5s;
-  }
-
-  #bio-icon-github:hover {
-    color: rgb(36, 158, 42);
-    transition: color 0.5s;
-  }
-
   /* SKILLS */
   #skills-container {
-    display: flex;
-    flex-direction: column;
     padding: 20px 10%;
-    opacity: 0;
-    -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
-    animation: 0.6s ease 0.1s normal forwards 1 fadein;
   }
 
   #skills-title {
-    text-align: left;
-    margin-bottom: 20px;
     font-size: 55px;
-    font-weight: 700;
-    font-family: 'Abel';
   }
 
   #skills-tech-container {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
   }
 
   .skills-area-container {
-    background: none;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
     padding: 0 25px;
     margin: 0 10px;
     width: 40%;
@@ -973,35 +763,19 @@ form input[type='submit'] {
   }
 
   .skills-area {
-    text-align: left;
     font-size: 45px;
-    font-weight: 700;
-    font-family: 'Abel';
-    margin-bottom: 10px;
-    color: grey;
   }
 
   .single-skill-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     height: 70px;
     margin: 0 0;
   }
 
   .single-skill-image {
-    object-fit: scale-down;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
     width: 40px;
-    height: 100%;
   }
 
   .single-skill {
-    text-align: left;
     font-size: 25px;
-    font-family: 'Abel';
-    padding: 0 20px;
   }
 }
