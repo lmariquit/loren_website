@@ -25,3 +25,5 @@ app.listen(port, function() {
   console.log("Who's there?")
   console.log(`Your server, listening on port ${port}`)
 })
+
+// OLD START SCRIPT --> "start": "webpack-dev-server --config ./webpack.config.js --mode development",
