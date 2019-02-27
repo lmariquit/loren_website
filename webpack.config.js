@@ -1,4 +1,5 @@
 const isDev = process.env.NODE_ENV === 'development'
+const port = process.env.PORT || 8080
 
 module.exports = {
   mode: isDev ? 'development' : 'production',
@@ -31,6 +32,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: './public'
+    contentBase: './public',
+    port: port
   }
 }
