@@ -341,7 +341,7 @@ form input[type='submit'] {
 }
 
 #bio-profile-pic {
-  background-image: url('lm_profile.png');
+  background-image: url('lm_headshot.png');
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 5px;
