@@ -557,7 +557,7 @@ form input[type='submit'] {
   /* PROJECTS */
   #proj-container {
     flex-direction: row;
-    justify-content: normal;
+    justify-content: center;
   }
 
   #proj-section-container {
