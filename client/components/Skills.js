@@ -14,7 +14,7 @@ const Skills = () => {
             return (
               <SingleSkill
                 key={skill.id}
-                skill={skill.tech}
+                skill={skill.name}
                 image={skill.image}
               />
             )
@@ -26,7 +26,7 @@ const Skills = () => {
             return (
               <SingleSkill
                 key={skill.id}
-                skill={skill.tech}
+                skill={skill.name}
                 image={skill.image}
               />
             )
@@ -38,7 +38,7 @@ const Skills = () => {
             return (
               <SingleSkill
                 key={skill.id}
-                skill={skill.tech}
+                skill={skill.name}
                 image={skill.image}
               />
             )

@@ -15,7 +15,7 @@ const Projects = () => {
             title={project.name}
             image={project.image}
             description={project.description}
-            techArr={project.tech}
+            techArr={project.mainTech}
             color={project.color}
             buttonsArr={project.buttons}
           />

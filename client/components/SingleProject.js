@@ -26,7 +26,7 @@ const SingleProject = ({
               {techArr.map(tech => {
                 return (
                   <div key={techKeyIdx++} className="tech-bubble">
-                    {tech}
+                    {tech.name}
                   </div>
                 )
               })}
