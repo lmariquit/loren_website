@@ -10,7 +10,12 @@ const ProjectButton = ({ title, link }) => {
     )
   }
   return (
-    <a className="proj-button" href={link} style={{ textDecoration: 'none' }}>
+    <a
+      className="proj-button"
+      href={link}
+      target="_blank"
+      style={{ textDecoration: 'none' }}
+    >
       {title}
     </a>
   )
