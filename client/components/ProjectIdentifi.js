@@ -16,20 +16,7 @@ const ProjectIdentifi = () => {
     techScreen,
     screenshots
   } = identifi_project
-  const {
-    objective,
-    inspiration_a,
-    inspiration_b,
-    inspiration_c,
-    inspiration_d,
-    howitworks_a,
-    howitworks_b,
-    howitworks_c,
-    howitworks_d,
-    takeaways_a,
-    takeaways_b,
-    takeaways_c
-  } = details
+  const { objective, inspiration, howitworks, takeaways } = details
   const background = {
     backgroundImage: `url(${techScreen})`
   }
@@ -59,10 +46,10 @@ const ProjectIdentifi = () => {
         </div>
         <div id="proj-body-inspiration-identifi-container">
           <div className="proj-body-title">Inspiration</div>
-          <div className="proj-body-content-identifi">{inspiration_a}</div>
-          <div className="proj-body-content-identifi">{inspiration_b}</div>
-          <div className="proj-body-content-identifi">{inspiration_c}</div>
-          <div className="proj-body-content-identifi">{inspiration_d}</div>
+          <div className="proj-body-content-identifi">{inspiration.a}</div>
+          <div className="proj-body-content-identifi">{inspiration.b}</div>
+          <div className="proj-body-content-identifi">{inspiration.c}</div>
+          <div className="proj-body-content-identifi">{inspiration.d}</div>
         </div>
         <div id="proj-body-tech-title" className="proj-body-title">
           Technology Used
@@ -76,19 +63,19 @@ const ProjectIdentifi = () => {
         </div>
         <div id="proj-body-howitworks-container-identifi">
           <div className="proj-body-title">How it Works</div>
-          <div className="proj-body-content-identifi">{howitworks_a}</div>
-          <div className="proj-body-content-identifi">{howitworks_b}</div>
-          <div className="proj-body-content-identifi">{howitworks_c}</div>
-          <div className="proj-body-content-identifi">{howitworks_d}</div>
+          <div className="proj-body-content-identifi">{howitworks.a}</div>
+          <div className="proj-body-content-identifi">{howitworks.b}</div>
+          <div className="proj-body-content-identifi">{howitworks.c}</div>
+          <div className="proj-body-content-identifi">{howitworks.d}</div>
         </div>
         <div id="proj-body-techstackimg-container-identifi">
           <div style={background} />
         </div>
         <div id="proj-body-takeaways-container-identifi">
           <div className="proj-body-title">Takeaways</div>
-          <div className="proj-body-content-identifi">{takeaways_a}</div>
-          <div className="proj-body-content-identifi">{takeaways_b}</div>
-          <div className="proj-body-content-identifi">{takeaways_c}</div>
+          <div className="proj-body-content-identifi">{takeaways.a}</div>
+          <div className="proj-body-content-identifi">{takeaways.b}</div>
+          <div className="proj-body-content-identifi">{takeaways.c}</div>
         </div>
       </div>
     </div>
