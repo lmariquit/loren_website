@@ -44,7 +44,7 @@ export const identifi_project = {
   ],
   color: {
     backgroundImage:
-      'linear-gradient(to right, rgb(99, 204, 253), rgb(0, 174, 255)'
+      'linear-gradient(to right, rgb(0, 174, 255), rgb(62, 91, 255)'
   },
   buttons: [
     {
@@ -119,8 +119,7 @@ export const flufftrainer_project = {
     webpack
   ],
   color: {
-    backgroundImage:
-      'linear-gradient(to right, rgb(42, 255, 95), rgb(42, 199, 55)'
+    backgroundImage: 'linear-gradient(to right, rgb(8, 240, 0), rgb(17, 197, 1)'
   },
   buttons: [
     {
