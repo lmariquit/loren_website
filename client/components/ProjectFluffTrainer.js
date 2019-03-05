@@ -20,7 +20,7 @@ const ProjectFluffTrainer = () => {
     <div id="proj-flufftrainer">
       <div id="proj-header-flufftrainer" style={color}>
         <img src={image} />
-        <div className="proj-header-platform" />
+        <div className="proj-header-platform-flufftrainer" />
         <div id="proj-title-flufftrainer">{name}</div>
         <div id="proj-button-container-flufftrainer">
           {buttons.map(button => {

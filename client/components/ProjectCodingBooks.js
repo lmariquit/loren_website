@@ -20,7 +20,7 @@ const ProjectCodingBooks = () => {
     <div id="proj-codingbooks">
       <div id="proj-header-codingbooks" style={color}>
         <img src={image} />
-        <div className="proj-header-platform" />
+        <div className="proj-header-platform-codingbooks" />
         <div id="proj-title-codingbooks">{name}</div>
         <div id="proj-button-container-codingbooks">
           {buttons.map(button => {

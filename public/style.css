@@ -499,7 +499,7 @@ form input[type='submit'] {
   z-index: 1;
 }
 
-.proj-header-platform {
+.proj-header-platform-identifi {
   position: absolute;
   background-image: linear-gradient(
     rgba(255, 255, 255, 0.01),
@@ -653,7 +653,7 @@ form input[type='submit'] {
   z-index: 1;
 }
 
-.proj-header-platform {
+.proj-header-platform-flufftrainer {
   position: absolute;
   background-image: linear-gradient(
     rgba(255, 255, 255, 0.01),
@@ -669,7 +669,6 @@ form input[type='submit'] {
   font-size: 95px;
   height: 140px;
   padding-top: 120px;
-
   color: white;
 }
 
@@ -808,7 +807,7 @@ form input[type='submit'] {
   z-index: 1;
 }
 
-.proj-header-platform {
+.proj-header-platform-codingbooks {
   position: absolute;
   background-image: linear-gradient(
     rgba(255, 255, 255, 0.01),
@@ -824,7 +823,6 @@ form input[type='submit'] {
   font-size: 95px;
   height: 140px;
   padding-top: 120px;
-
   color: white;
 }
 
@@ -1262,61 +1260,27 @@ form input[type='submit'] {
 
   /* FOR INDIVIDUAL PROJECT COMPONENTS */
   /* IDENTIFI */
-  #proj-identifi {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: 'Abel';
-  }
-
   #proj-header-identifi {
-    /* background-image: linear-gradient(
-    to right,
-    rgb(0, 174, 255),
-    rgb(99, 204, 253)
-  ); */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 600px;
-    padding: 25px 0;
-    opacity: 0;
-    -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
-    animation: 0.7s ease 0s normal forwards 1 fadein;
   }
 
   #proj-header-identifi img {
     height: 400px;
-    z-index: 1;
   }
 
-  .proj-header-platform {
-    position: absolute;
-    background-image: linear-gradient(
-      rgba(255, 255, 255, 0.01),
-      rgba(255, 255, 255, 0.25)
-    );
-    width: 750px;
-    border-radius: 99%;
+  .proj-header-platform-identifi {
     margin-top: 75px;
     top: 345px;
   }
 
-  #proj-header-identifi div {
+  #proj-title-identifi {
     font-size: 65px;
     height: 70px;
-    padding-top: 25px;
-    color: white;
+    padding-top: 45px;
   }
 
   #proj-button-container-identifi {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
   }
 
   #proj-button-container-identifi a {
@@ -1325,55 +1289,25 @@ form input[type='submit'] {
     margin: 0 1%;
   }
 
-  #proj-button-container-identifi .proj-button {
-    text-decoration: none;
-    background-color: none;
-  }
-
-  .proj-button div {
-    color: white;
-  }
-
   #proj-body-identifi {
     margin: 0 20%;
   }
 
   .proj-body-title {
     font-size: 35px;
-    margin-top: 30px;
-    color: grey;
-    font-weight: bold;
-    opacity: 0;
-    -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
-    animation: 0.7s ease 0s normal forwards 1 fadein;
   }
 
   .proj-body-content-identifi {
     margin-top: 15px;
     font-size: 20px;
-    opacity: 0;
-    -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
-    animation: 0.6s ease 0.1s normal forwards 1 fadein;
   }
 
   #proj-body-tech-container {
-    position: absolute;
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 50%;
-    padding: 20px 0;
-    padding-left: 10%;
-    margin: 10px 0;
-    border-radius: 5px;
-    opacity: 0;
-    -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
-    animation: 0.7s ease 0s normal forwards 1 fadein;
   }
 
   .single-tech-container {
-    display: flex;
-    flex-direction: row;
     height: 50px;
     width: 50%;
     margin: 5px 0;
@@ -1381,16 +1315,11 @@ form input[type='submit'] {
 
   .single-tech-image {
     width: 50px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
   }
 
   .single-tech {
     font-size: 20px;
     padding-left: 17px;
-    padding-top: 11px;
-    color: white;
   }
 
   #proj-body-howitworks-container-identifi {
@@ -1398,78 +1327,38 @@ form input[type='submit'] {
   }
 
   #proj-body-techstackimg-container-identifi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 465px;
   }
 
   #proj-body-techstackimg-container-identifi div {
     width: 600px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
   }
 
   /* FLUFFTRAINER */
-  #proj-flufftrainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: 'Abel';
-  }
-
   #proj-header-flufftrainer {
-    /* background-image: linear-gradient(
-  to right,
-  rgb(0, 174, 255),
-  rgb(99, 204, 253)
-); */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 600px;
-    padding: 25px 0;
-    opacity: 0;
-    -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
-    animation: 0.7s ease 0s normal forwards 1 fadein;
   }
 
   #proj-header-flufftrainer img {
     height: 400px;
     margin-top: -15px;
     margin-bottom: 15px;
-    z-index: 1;
   }
 
-  .proj-header-platform {
-    position: absolute;
-    background-image: linear-gradient(
-      rgba(255, 255, 255, 0.01),
-      rgba(255, 255, 255, 0.25)
-    );
+  .proj-header-platform-flufftrainer {
     width: 900px;
-    border-radius: 99%;
     margin-top: 75px;
     top: 345px;
   }
 
-  #proj-header-flufftrainer div {
+  #proj-title-flufftrainer {
     font-size: 65px;
     height: 70px;
-    padding-top: 25px;
-    color: white;
+    padding-top: 45px;
   }
 
   #proj-button-container-flufftrainer {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
   }
 
   #proj-button-container-flufftrainer a {
@@ -1478,55 +1367,25 @@ form input[type='submit'] {
     margin: 0 1%;
   }
 
-  #proj-button-container-flufftrainer .proj-button {
-    text-decoration: none;
-    background-color: none;
-  }
-
-  .proj-button div {
-    color: white;
-  }
-
   #proj-body-flufftrainer {
     margin: 0 20%;
   }
 
   .proj-body-title {
     font-size: 35px;
-    margin-top: 30px;
-    color: grey;
-    font-weight: bold;
-    opacity: 0;
-    -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
-    animation: 0.7s ease 0s normal forwards 1 fadein;
   }
 
   .proj-body-content-flufftrainer {
     margin-top: 15px;
     font-size: 20px;
-    opacity: 0;
-    -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
-    animation: 0.6s ease 0.1s normal forwards 1 fadein;
   }
 
   #proj-body-tech-container {
-    position: absolute;
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 50%;
-    padding: 20px 0;
-    padding-left: 10%;
-    margin: 10px 0;
-    border-radius: 5px;
-    opacity: 0;
-    -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
-    animation: 0.7s ease 0s normal forwards 1 fadein;
   }
 
   .single-tech-container {
-    display: flex;
-    flex-direction: row;
     height: 50px;
     width: 50%;
     margin: 5px 0;
@@ -1534,16 +1393,11 @@ form input[type='submit'] {
 
   .single-tech-image {
     width: 50px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
   }
 
   .single-tech {
     font-size: 20px;
     padding-left: 17px;
-    padding-top: 11px;
-    color: white;
   }
 
   #proj-body-howitworks-container-flufftrainer {
@@ -1551,78 +1405,38 @@ form input[type='submit'] {
   }
 
   #proj-body-techstackimg-container-flufftrainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 465px;
   }
 
   #proj-body-techstackimg-container-flufftrainer div {
     width: 600px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
   }
 
   /* CODINGBOOKS */
-  #proj-codingbooks {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: 'Abel';
-  }
-
   #proj-header-codingbooks {
-    /* background-image: linear-gradient(
-  to right,
-  rgb(0, 174, 255),
-  rgb(99, 204, 253)
-); */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 600px;
-    padding: 25px 0;
-    opacity: 0;
-    -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
-    animation: 0.7s ease 0s normal forwards 1 fadein;
   }
 
   #proj-header-codingbooks img {
     height: 400px;
     margin-top: -15px;
     margin-bottom: 15px;
-    z-index: 1;
   }
 
-  .proj-header-platform {
-    position: absolute;
-    background-image: linear-gradient(
-      rgba(255, 255, 255, 0.01),
-      rgba(255, 255, 255, 0.25)
-    );
+  .proj-header-platform-codingbooks {
     width: 900px;
-    border-radius: 99%;
     margin-top: 75px;
     top: 345px;
   }
 
-  #proj-header-codingbooks div {
+  #proj-title-codingbooks {
     font-size: 65px;
     height: 70px;
-    padding-top: 25px;
-    color: white;
+    padding-top: 45px;
   }
 
   #proj-button-container-codingbooks {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
   }
 
   #proj-button-container-codingbooks a {
@@ -1631,55 +1445,26 @@ form input[type='submit'] {
     margin: 0 1%;
   }
 
-  #proj-button-container-codingbooks .proj-button {
-    text-decoration: none;
-    background-color: none;
-  }
-
-  .proj-button div {
-    color: white;
-  }
-
   #proj-body-codingbooks {
     margin: 0 20%;
   }
 
   .proj-body-title {
     font-size: 35px;
-    margin-top: 30px;
-    color: grey;
-    font-weight: bold;
-    opacity: 0;
-    -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
-    animation: 0.7s ease 0s normal forwards 1 fadein;
   }
 
   .proj-body-content-codingbooks {
     margin-top: 15px;
     font-size: 20px;
-    opacity: 0;
-    -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
-    animation: 0.6s ease 0.1s normal forwards 1 fadein;
   }
 
   #proj-body-tech-container {
-    position: absolute;
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 50%;
-    padding: 20px 0;
-    padding-left: 10%;
     margin: 10px 0;
-    border-radius: 5px;
-    opacity: 0;
-    -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
-    animation: 0.7s ease 0s normal forwards 1 fadein;
   }
 
   .single-tech-container {
-    display: flex;
-    flex-direction: row;
     height: 50px;
     width: 50%;
     margin: 5px 0;
@@ -1687,16 +1472,12 @@ form input[type='submit'] {
 
   .single-tech-image {
     width: 50px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
   }
 
   .single-tech {
     font-size: 20px;
     padding-left: 17px;
     padding-top: 11px;
-    color: white;
   }
 
   #proj-body-howitworks-container-codingbooks {
@@ -1704,17 +1485,10 @@ form input[type='submit'] {
   }
 
   #proj-body-techstackimg-container-codingbooks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 465px;
   }
 
   #proj-body-techstackimg-container-codingbooks div {
     width: 600px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
   }
 }

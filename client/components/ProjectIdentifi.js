@@ -25,7 +25,7 @@ const ProjectIdentifi = () => {
     <div id="proj-identifi">
       <div id="proj-header-identifi" style={color}>
         <img src={image} />
-        <div className="proj-header-platform" />
+        <div className="proj-header-platform-identifi" />
         <div id="proj-title-identifi">{name}</div>
         <div id="proj-button-container-identifi">
           {buttons.map(button => {
