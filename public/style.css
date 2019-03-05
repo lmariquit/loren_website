@@ -487,7 +487,7 @@ form input[type='submit'] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 1250px;
   padding: 25px 0;
   opacity: 0;
   -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
@@ -495,7 +495,7 @@ form input[type='submit'] {
 }
 
 #proj-header-identifi img {
-  height: 400px;
+  height: 600px;
   z-index: 1;
 }
 
@@ -507,27 +507,30 @@ form input[type='submit'] {
   );
   width: 750px;
   border-radius: 99%;
-  margin-top: 75px;
+  height: 100px;
+  top: 650px;
 }
 
-#proj-header-identifi div {
-  font-size: 65px;
-  height: 70px;
-  padding-top: 25px;
+#proj-title-identifi {
+  font-size: 95px;
+  height: 100px;
+  padding-top: 85px;
   color: white;
 }
 
 #proj-button-container-identifi {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 500px;
   width: 100%;
 }
 
 #proj-button-container-identifi a {
-  height: 40px;
-  border-radius: 50px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 15px 0;
 }
 
 #proj-button-container-identifi .proj-button {
@@ -540,11 +543,11 @@ form input[type='submit'] {
 }
 
 #proj-body-identifi {
-  margin: 0 20%;
+  margin: 0 5%;
 }
 
 .proj-body-title {
-  font-size: 35px;
+  font-size: 85px;
   margin-top: 30px;
   color: grey;
   font-weight: bold;
@@ -554,8 +557,8 @@ form input[type='submit'] {
 }
 
 .proj-body-content-identifi {
-  margin-top: 15px;
-  font-size: 20px;
+  margin-top: 50px;
+  font-size: 50px;
   opacity: 0;
   -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
   animation: 0.6s ease 0.1s normal forwards 1 fadein;
@@ -564,9 +567,9 @@ form input[type='submit'] {
 #proj-body-tech-container {
   position: absolute;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  width: 50%;
+  width: 80%;
   padding: 20px 0;
   padding-left: 10%;
   margin: 10px 0;
@@ -579,42 +582,46 @@ form input[type='submit'] {
 .single-tech-container {
   display: flex;
   flex-direction: row;
-  height: 50px;
-  width: 50%;
-  margin: 5px 0;
+  height: 100px;
+  width: 100%;
+  margin: 15px 0;
 }
 
 .single-tech-image {
-  width: 50px;
+  width: 100px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
 .single-tech {
-  font-size: 20px;
-  padding-left: 17px;
+  font-size: 50px;
+  padding-left: 50px;
   padding-top: 11px;
+  color: white;
 }
 
 #proj-body-howitworks-container-identifi {
-  margin-top: 505px;
+  margin-top: 1770px;
 }
 
 #proj-body-techstackimg-container-identifi {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 465px;
+  height: 650px;
 }
 
 #proj-body-techstackimg-container-identifi div {
-  width: 600px;
+  width: 900px;
   height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
+
+/* FLUFFTRAINER */
+
 /* FOR FADE IN */
 
 @keyframes fadein {
@@ -943,5 +950,157 @@ form input[type='submit'] {
   .skills-area-container:hover .single-skill-image {
     width: 50px;
     transition: width 0.5s;
+  }
+
+  /* FOR INDIVIDUAL PROJECT COMPONENTS */
+  /* IDENTIFI */
+  #proj-identifi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Abel';
+  }
+
+  #proj-header-identifi {
+    /* background-image: linear-gradient(
+    to right,
+    rgb(0, 174, 255),
+    rgb(99, 204, 253)
+  ); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    padding: 25px 0;
+    opacity: 0;
+    -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
+    animation: 0.7s ease 0s normal forwards 1 fadein;
+  }
+
+  #proj-header-identifi img {
+    height: 400px;
+    z-index: 1;
+  }
+
+  .proj-header-platform {
+    position: absolute;
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.01),
+      rgba(255, 255, 255, 0.25)
+    );
+    width: 750px;
+    border-radius: 99%;
+    margin-top: 75px;
+    top: 345px;
+  }
+
+  #proj-header-identifi div {
+    font-size: 65px;
+    height: 70px;
+    padding-top: 25px;
+    color: white;
+  }
+
+  #proj-button-container-identifi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #proj-button-container-identifi a {
+    height: 40px;
+    border-radius: 50px;
+    margin: 0 1%;
+  }
+
+  #proj-button-container-identifi .proj-button {
+    text-decoration: none;
+    background-color: none;
+  }
+
+  .proj-button div {
+    color: white;
+  }
+
+  #proj-body-identifi {
+    margin: 0 20%;
+  }
+
+  .proj-body-title {
+    font-size: 35px;
+    margin-top: 30px;
+    color: grey;
+    font-weight: bold;
+    opacity: 0;
+    -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
+    animation: 0.7s ease 0s normal forwards 1 fadein;
+  }
+
+  .proj-body-content-identifi {
+    margin-top: 15px;
+    font-size: 20px;
+    opacity: 0;
+    -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
+    animation: 0.6s ease 0.1s normal forwards 1 fadein;
+  }
+
+  #proj-body-tech-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 20px 0;
+    padding-left: 10%;
+    margin: 10px 0;
+    border-radius: 5px;
+    opacity: 0;
+    -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
+    animation: 0.7s ease 0s normal forwards 1 fadein;
+  }
+
+  .single-tech-container {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 50%;
+    margin: 5px 0;
+  }
+
+  .single-tech-image {
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .single-tech {
+    font-size: 20px;
+    padding-left: 17px;
+    padding-top: 11px;
+    color: white;
+  }
+
+  #proj-body-howitworks-container-identifi {
+    margin-top: 505px;
+  }
+
+  #proj-body-techstackimg-container-identifi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 465px;
+  }
+
+  #proj-body-techstackimg-container-identifi div {
+    width: 600px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 }
