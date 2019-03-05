@@ -20,7 +20,7 @@ const ProjectIdentifi = () => {
   const background = {
     backgroundImage: `url(${techScreen})`
   }
-  console.log(techScreen)
+
   return (
     <div id="proj-identifi">
       <div id="proj-header-identifi" style={color}>

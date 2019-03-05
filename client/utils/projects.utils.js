@@ -130,7 +130,7 @@ export const flufftrainer_project = {
     },
     {
       id: 1,
-      title: 'SEE PROJECT',
+      title: 'SEE VIDEO',
       link: 'https://www.youtube.com/watch?v=4AzsF48Uu6E'
     },
     {

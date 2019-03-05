@@ -1,20 +1,77 @@
 import React from 'react'
+
+import SingleTech from './SingleTech'
 import { flufftrainer_project } from '../utils'
+import ProjectButton from './ProjectButton'
 
 const ProjectFluffTrainer = () => {
+  const {
+    name,
+    image,
+    mainTech,
+    otherTech,
+    color,
+    buttons,
+    details,
+    // techScreen,
+    screenshots
+  } = flufftrainer_project
+  const { objective, inspiration, howitworks, takeaways } = details
+  // const background = {
+  //   backgroundImage: `url(${techScreen})`
+  // }
+  // console.log(techScreen)
   return (
-    <div id="flufftrainer-container">
-      <div id="header-flufftrainer">
-        <div id="flufftrainer-image" />
-        <div id="flufftrainer-title">FluffTrainer</div>
+    <div id="proj-flufftrainer">
+      <div id="proj-header-flufftrainer" style={color}>
+        <img src={image} />
+        <div className="proj-header-platform" />
+        <div id="proj-title-flufftrainer">{name}</div>
+        <div id="proj-button-container-flufftrainer">
+          {buttons.map(button => {
+            return (
+              <ProjectButton
+                key={button.id}
+                title={button.title}
+                link={button.link}
+              />
+            )
+          })}
+        </div>
       </div>
-      <div id="body-flufftrainer">
-        <div id="flufftrainer-objective">Objective</div>
-        <div id="flufftrainer-tech">Technology used in this project</div>
-        <div id="flufftrainer-influence">Influence</div>
-        <div id="flufftrainer-howitworks">How it works</div>
-        <div id="flufftrainer-screens" />
-        <div id="flufftrainer-takeaways">Takeaways</div>
+      <div id="proj-body-flufftrainer">
+        <div id="proj-body-objective-container-flufftrainer">
+          <div className="proj-body-title">Objective</div>
+          <div className="proj-body-content-flufftrainer">{objective}</div>
+        </div>
+        <div id="proj-body-inspiration-flufftrainer-container">
+          <div className="proj-body-title">Inspiration</div>
+          <div className="proj-body-content-flufftrainer">{inspiration.a}</div>
+          <div className="proj-body-content-flufftrainer">{inspiration.b}</div>
+        </div>
+        <div id="proj-body-tech-title" className="proj-body-title">
+          Technology Used
+        </div>
+        <div id="proj-body-tech-container" style={color}>
+          {[...mainTech, ...otherTech].map(tech => {
+            return (
+              <SingleTech key={tech.id} name={tech.name} image={tech.image} />
+            )
+          })}
+        </div>
+        <div id="proj-body-howitworks-container-flufftrainer">
+          <div className="proj-body-title">How it Works</div>
+          <div className="proj-body-content-flufftrainer">{howitworks.a}</div>
+          <div className="proj-body-content-flufftrainer">{howitworks.b}</div>
+        </div>
+        {/* <div id="proj-body-techstackimg-container-flufftrainer">
+          <div style={background} />
+        </div> */}
+        <div id="proj-body-takeaways-container-flufftrainer">
+          <div className="proj-body-title">Takeaways</div>
+          <div className="proj-body-content-flufftrainer">{takeaways.a}</div>
+          <div className="proj-body-content-flufftrainer">{takeaways.b}</div>
+        </div>
       </div>
     </div>
   )
