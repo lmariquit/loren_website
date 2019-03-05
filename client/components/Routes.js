@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Route } from 'react-router'
 import { Switch } from 'react-router-dom'
 
@@ -9,6 +9,9 @@ import ProjectFluffTrainer from './ProjectFluffTrainer'
 import ProjectIdentifi from './ProjectIdentifi'
 
 const Routes = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
   return (
     <Switch>
       <Route exact path="/" component={Projects} />
