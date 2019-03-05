@@ -13,14 +13,9 @@ const ProjectFluffTrainer = () => {
     color,
     buttons,
     details,
-    // techScreen,
     screenshots
   } = flufftrainer_project
   const { objective, inspiration, howitworks, takeaways } = details
-  // const background = {
-  //   backgroundImage: `url(${techScreen})`
-  // }
-  // console.log(techScreen)
   return (
     <div id="proj-flufftrainer">
       <div id="proj-header-flufftrainer" style={color}>
@@ -64,9 +59,6 @@ const ProjectFluffTrainer = () => {
           <div className="proj-body-content-flufftrainer">{howitworks.a}</div>
           <div className="proj-body-content-flufftrainer">{howitworks.b}</div>
         </div>
-        {/* <div id="proj-body-techstackimg-container-flufftrainer">
-          <div style={background} />
-        </div> */}
         <div id="proj-body-takeaways-container-flufftrainer">
           <div className="proj-body-title">Takeaways</div>
           <div className="proj-body-content-flufftrainer">{takeaways.a}</div>
