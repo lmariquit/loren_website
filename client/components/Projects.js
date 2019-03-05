@@ -18,6 +18,7 @@ const Projects = () => {
             techArr={project.mainTech}
             color={project.color}
             buttonsArr={project.buttons}
+            component={project.component}
           />
         ))}
       </div>

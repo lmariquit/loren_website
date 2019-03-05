@@ -37,25 +37,25 @@ export const semanticUI = {
 
 // BACKEND
 export const node = {
-  id: 0,
+  id: 6,
   name: 'Node.JS',
   image: 'https://s3.amazonaws.com/lm-portfolio/node_logo.png'
 }
 
 export const express = {
-  id: 1,
+  id: 7,
   name: 'Express.JS',
   image: 'https://s3.amazonaws.com/lm-portfolio/express_logo.png'
 }
 
 export const sequelize = {
-  id: 2,
+  id: 8,
   name: 'Sequelize',
   image: 'https://s3.amazonaws.com/lm-portfolio/sequelize_logo.png'
 }
 
 export const postgreSQL = {
-  id: 3,
+  id: 9,
   name: 'PostgreSQL',
   image: 'https://s3.amazonaws.com/lm-portfolio/postgresql_logo.png'
 }
@@ -63,75 +63,75 @@ export const postgreSQL = {
 // OTHER
 
 export const git = {
-  id: 0,
+  id: 10,
   name: 'Git',
   image: 'https://s3.amazonaws.com/lm-portfolio/git_logo.png'
 }
 
 export const github = {
-  id: 1,
+  id: 11,
   name: 'GitHub',
   image: 'https://s3.amazonaws.com/lm-portfolio/github_logo.png'
 }
 
 export const ajax = {
-  id: 2,
+  id: 12,
   name: 'AJAX',
   image: 'https://s3.amazonaws.com/lm-portfolio/ajax_logo.png'
 }
 
 export const json = {
-  id: 3,
+  id: 13,
   name: 'JSON',
   image: 'https://s3.amazonaws.com/lm-portfolio/json_logo.png'
 }
 
 export const reactNative = {
-  id: 4,
+  id: 14,
   name: 'React-Native',
   image: 'https://s3.amazonaws.com/lm-portfolio/reactnative_logo.png'
 }
 
 export const webpack = {
-  id: 5,
+  id: 15,
   name: 'WebPack',
   image: 'https://s3.amazonaws.com/lm-portfolio/webpack_logo.svg'
 }
 
 export const googleVisionAPI = {
-  id: 6,
+  id: 16,
   name: 'Google Vision API',
-  image: 'https://s3.amazonaws.com/lm-portfolio/webpack_logo.svg'
+  image: 'https://s3.amazonaws.com/lm-portfolio/googlevision_logo.png'
 }
 
 export const yelpBusinessAPI = {
-  id: 7,
+  id: 17,
   name: 'Yelp Business API',
-  image: 'https://s3.amazonaws.com/lm-portfolio/webpack_logo.svg'
+  image: 'https://s3.amazonaws.com/lm-portfolio/yelp_logo.png'
 }
 
 export const appleMaps = {
-  id: 8,
+  id: 18,
   name: 'Apple Maps',
-  image: 'https://s3.amazonaws.com/lm-portfolio/webpack_logo.svg'
+  image: 'https://s3.amazonaws.com/lm-portfolio/applemaps_logo.png'
 }
 
 export const webSpeechAPI = {
-  id: 9,
+  id: 19,
   name: 'Web Speech API',
-  image: 'https://s3.amazonaws.com/lm-portfolio/semanticUI_logo.png'
+  image: 'https://s3.amazonaws.com/lm-portfolio/webspeech_logo.png'
 }
 
 export const stripeAPI = {
-  id: 10,
+  id: 20,
   name: 'Stripe API',
-  image: 'https://s3.amazonaws.com/lm-portfolio/semanticUI_logo.png'
+  image: 'https://s3.amazonaws.com/lm-portfolio/stripe_logo.png'
 }
 
 export const s3Bucket = {
-  id: 11,
+  id: 21,
   name: 'AWS S3 Bucket',
-  image: 'https://s3.amazonaws.com/lm-portfolio/semanticUI_logo.png'
+  image: 'https://s3.amazonaws.com/lm-portfolio/s3_logo.png'
 }
 
 export const frontEnd = [javascript, react, redux, html5, css, semanticUI]
