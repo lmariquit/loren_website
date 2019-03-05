@@ -647,7 +647,9 @@ form input[type='submit'] {
 }
 
 #proj-header-flufftrainer img {
-  height: 600px;
+  height: 470px;
+  margin-top: 45px;
+  margin-bottom: -45px;
   z-index: 1;
 }
 
@@ -657,16 +659,17 @@ form input[type='submit'] {
     rgba(255, 255, 255, 0.01),
     rgba(255, 255, 255, 0.25)
   );
-  width: 750px;
+  width: 890px;
   border-radius: 99%;
   height: 100px;
-  top: 650px;
+  top: 625px;
 }
 
 #proj-title-flufftrainer {
   font-size: 95px;
-  height: 100px;
-  padding-top: 85px;
+  height: 140px;
+  padding-top: 120px;
+
   color: white;
 }
 
@@ -754,7 +757,7 @@ form input[type='submit'] {
 }
 
 #proj-body-howitworks-container-flufftrainer {
-  margin-top: 1770px;
+  margin-top: 2070px;
 }
 
 #proj-body-techstackimg-container-flufftrainer {
