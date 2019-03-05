@@ -48,10 +48,12 @@ export const identifi_project = {
   },
   buttons: [
     {
+      id: 0,
       title: 'SEE VIDEO',
       link: 'https://www.youtube.com/watch?v=rd0a3vgH-dk'
     },
     {
+      id: 1,
       title: 'SEE GITHUB',
       link: 'https://github.com/clubjubjub'
     }
@@ -60,6 +62,8 @@ export const identifi_project = {
     title: 'VIEW PROJECT',
     link: '/identifi'
   },
+  techScreen: 'identifi_techstack.png',
+  screenshots: [],
   details: {
     objective:
       'This project served as our final capstone project for Fullstack Academy. Our final Capstone project was meant to deepen our learning of the material we’ve studied throughout our time at Fullstack Academy. We would learn to work as a small, three-man team in a longer time frame than our e-commerce website project: a span of about 2.5 weeks. We were also encouraged to explore new technologies to get us to solve difficult problems that may or may not have an obvious solution.',
@@ -114,14 +118,17 @@ export const flufftrainer_project = {
   },
   buttons: [
     {
+      id: 0,
       title: 'VISIT WEBSITE',
       link: 'https://flufftrainer.herokuapp.com/'
     },
     {
+      id: 1,
       title: 'SEE PROJECT',
       link: 'https://www.youtube.com/watch?v=4AzsF48Uu6E'
     },
     {
+      id: 2,
       title: 'SEE GITHUB',
       link: 'https://github.com/lmariquit/fluffTrainer'
     }
@@ -130,6 +137,7 @@ export const flufftrainer_project = {
     title: 'VIEW PROJECT',
     link: '/FluffTrainer'
   },
+  screenshots: [],
   details: {
     objective:
       'This project served as our final capstone project for Fullstack Academy. Our final Capstone project was meant to deepen our learning of the material we’ve studied throughout our time at Fullstack Academy. We would learn to work as a small, three-man team in a longer time frame than our e-commerce website project: a span of about 2.5 weeks. We were also encouraged to explore new technologies to get us to solve difficult problems that may or may not have an obvious solution.',
@@ -181,10 +189,12 @@ export const codingbooks_project = {
   },
   buttons: [
     {
+      id: 0,
       title: 'VISIT WEBSITE',
       link: 'https://codingbooks.herokuapp.com/'
     },
     {
+      id: 2,
       title: 'SEE GITHUB',
       link: 'https://github.com/spoontales/graceshopper'
     }

@@ -12,7 +12,9 @@ const ProjectIdentifi = () => {
     otherTech,
     color,
     buttons,
-    details
+    details,
+    techScreen,
+    screenshots
   } = identifi_project
   const {
     objective,
@@ -28,6 +30,10 @@ const ProjectIdentifi = () => {
     takeaways_b,
     takeaways_c
   } = details
+  const background = {
+    backgroundImage: `url(${techScreen})`
+  }
+  console.log(techScreen)
   return (
     <div id="proj-identifi">
       <div id="proj-header-identifi" style={color}>
@@ -36,7 +42,13 @@ const ProjectIdentifi = () => {
         <div>{name}</div>
         <div id="proj-button-container-identifi">
           {buttons.map(button => {
-            return <ProjectButton title={button.title} link={button.link} />
+            return (
+              <ProjectButton
+                key={button.id}
+                title={button.title}
+                link={button.link}
+              />
+            )
           })}
         </div>
       </div>
@@ -68,6 +80,9 @@ const ProjectIdentifi = () => {
           <div className="proj-body-content-identifi">{howitworks_b}</div>
           <div className="proj-body-content-identifi">{howitworks_c}</div>
           <div className="proj-body-content-identifi">{howitworks_d}</div>
+        </div>
+        <div id="proj-body-techstackimg-container-identifi">
+          <div style={background} />
         </div>
         <div id="proj-body-takeaways-container-identifi">
           <div className="proj-body-title">Takeaways</div>
