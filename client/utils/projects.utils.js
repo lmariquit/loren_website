@@ -29,7 +29,7 @@ export const identifi_project = {
   name: 'identifi',
   image: 'identifi_phone.png',
   description:
-    'An image recognition and local search mobile application that retreives the Yelp information of a storefront by simply taking a picture of it',
+    'An image recognition and local search mobile application that identifies storefronts with ease',
   mainTech: [reactNative, googleVisionAPI, yelpBusinessAPI, appleMaps],
   otherTech: [
     javascript,
@@ -103,7 +103,7 @@ export const flufftrainer_project = {
   name: 'FluffTrainer',
   image: 'flufftrainer_screenshot.png',
   description:
-    'Are filler words ruining your presentations? FluffTrainer is your first step to eliminating those meaningless words and phrases from your vocabulary.',
+    'An application that will help you eliminate meaningless words and phrases from your presentations',
   mainTech: [react, webSpeechAPI, postgreSQL, semanticUI],
   otherTech: [
     javascript,

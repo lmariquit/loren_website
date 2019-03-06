@@ -1,7 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
-// import ProjectButton from './ProjectButton'
 
 const SingleProject = ({
   title,
@@ -33,17 +30,18 @@ const SingleProject = ({
                 )
               })}
             </div>
-            <div id="proj-button-container">
-              <div className="proj-button">
-                <Link to={component.link} style={{ textDecoration: 'none' }}>
-                  <div>{component.title}</div>
-                </Link>
-              </div>
+            <div className="proj-desc-container">
+              <div className="proj-desc">{description}</div>
             </div>
+            <div id="proj-clickme-mobile">CLICK FOR PROJECT DETAILS</div>
           </div>
-          <div id="proj-desc-container">
-            <div id="proj-desc">{description}</div>
-          </div>
+          <a
+            href={component.link}
+            id="proj-clickme-container"
+            style={{ textDecoration: 'none' }}
+          >
+            <div id="proj-clickme">CLICK FOR PROJECT DETAILS</div>
+          </a>
         </div>
       </div>
     )
