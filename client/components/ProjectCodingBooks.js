@@ -64,6 +64,13 @@ const ProjectCodingBooks = () => {
           <div className="proj-body-content-codingbooks">{takeaways.b}</div>
         </div>
       </div>
+      <a
+        className="proj-backtoprojects"
+        href="/"
+        style={{ textDecoration: 'none' }}
+      >
+        BACK TO PROJECTS
+      </a>
     </div>
   )
 }

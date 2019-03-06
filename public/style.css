@@ -172,7 +172,23 @@
 }
 
 #proj-clickme-container {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.123),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Abel';
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #single-proj-container:hover #proj-clickme-container {
@@ -478,6 +494,13 @@ form input[type='submit'] {
 .proj-button:hover {
   color: rgb(73, 73, 255);
   background-color: rgba(255, 255, 255, 0.589);
+}
+
+.proj-backtoprojects {
+  margin: 35px 0;
+  text-align: center;
+  font-size: 50px;
+  color: grey;
 }
 
 /* IDENTIFI */
@@ -1100,23 +1123,11 @@ form input[type='submit'] {
   }
 
   #proj-clickme-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: absolute;
     width: 49.5%;
-    height: 500px;
     color: white;
-    background-image: linear-gradient(
-      rgba(255, 255, 255, 0.123),
-      rgba(255, 255, 255, 0.1)
-    );
-    border-radius: 5px;
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Abel';
     opacity: 0;
     transition: opacity 0.3s;
+    text-indent: 0;
   }
 
   #proj-clickme {
@@ -1291,6 +1302,12 @@ form input[type='submit'] {
   .proj-button div {
     color: white;
   }
+
+  .proj-backtoprojects {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+
   /* IDENTIFI */
   #proj-identifi {
     margin-bottom: 40px;
