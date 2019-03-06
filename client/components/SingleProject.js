@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-import ProjectButton from './ProjectButton'
+// import ProjectButton from './ProjectButton'
 
 const SingleProject = ({
   title,
@@ -8,7 +9,8 @@ const SingleProject = ({
   description,
   techArr,
   color,
-  buttonsArr
+  buttonsArr,
+  component
 }) => {
   let techKeyIdx = 0
   let buttonKeyIdx = 0
@@ -26,21 +28,17 @@ const SingleProject = ({
               {techArr.map(tech => {
                 return (
                   <div key={techKeyIdx++} className="tech-bubble">
-                    {tech}
+                    {tech.name}
                   </div>
                 )
               })}
             </div>
             <div id="proj-button-container">
-              {buttonsArr.map(button => {
-                return (
-                  <ProjectButton
-                    key={buttonKeyIdx++}
-                    title={button.title}
-                    link={button.link}
-                  />
-                )
-              })}
+              <div className="proj-button">
+                <Link to={component.link} style={{ textDecoration: 'none' }}>
+                  <div>{component.title}</div>
+                </Link>
+              </div>
             </div>
           </div>
           <div id="proj-desc-container">

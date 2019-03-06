@@ -33,10 +33,10 @@ const About = () => {
               </div>
             </div>
             <div id="bio-links">
-              <a href="https://linkedin.com/in/lorenmariquit/">
+              <a href="https://linkedin.com/in/lorenmariquit/" target="_blank">
                 <i id="bio-icon-linkedin" className="fa fa-linkedin" />
               </a>
-              <a href="https://github.com/lmariquit">
+              <a href="https://github.com/lmariquit" target="_blank">
                 <i id="bio-icon-github" className="fa fa-github" />
               </a>
             </div>
