@@ -78,6 +78,13 @@ const ProjectIdentifi = () => {
           <div className="proj-body-content-identifi">{takeaways.c}</div>
         </div>
       </div>
+      <a
+        className="proj-backtoprojects"
+        href="/"
+        style={{ textDecoration: 'none' }}
+      >
+        BACK TO PROJECTS
+      </a>
     </div>
   )
 }
