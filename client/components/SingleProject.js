@@ -7,10 +7,15 @@ const SingleProject = ({
   techArr,
   color,
   buttonsArr,
-  component
+  component,
+  logo
 }) => {
   let techKeyIdx = 0
   let buttonKeyIdx = 0
+
+  const backgroundLogo = {
+    backgroundImage: `url(${logo})`
+  }
 
   if (title) {
     return (
@@ -20,7 +25,11 @@ const SingleProject = ({
             <img src={image} />
           </div>
           <div id="proj-info-container">
-            <div id="proj-title">{title}</div>
+            {logo ? (
+              <div id="proj-title-logo" style={backgroundLogo} />
+            ) : (
+              <div id="proj-title">{title}</div>
+            )}
             <div id="proj-tech-container">
               {techArr.map(tech => {
                 return (

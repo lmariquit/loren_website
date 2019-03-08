@@ -14,11 +14,15 @@ const ProjectIdentifi = () => {
     buttons,
     details,
     techScreen,
-    screenshots
+    screenshots,
+    logo
   } = identifi_project
   const { objective, inspiration, howitworks, takeaways } = details
-  const background = {
+  const backgroundTech = {
     backgroundImage: `url(${techScreen})`
+  }
+  const backgroundLogo = {
+    backgroundImage: `url(${logo})`
   }
 
   return (
@@ -26,7 +30,7 @@ const ProjectIdentifi = () => {
       <div id="proj-header-identifi" style={color}>
         <img src={image} />
         <div className="proj-header-platform-identifi" />
-        <div id="proj-title-identifi">{name}</div>
+        <div id="proj-title-identifi" style={backgroundLogo} />
         <div id="proj-button-container-identifi">
           {buttons.map(button => {
             return (
@@ -69,7 +73,7 @@ const ProjectIdentifi = () => {
           <div className="proj-body-content-identifi">{howitworks.d}</div>
         </div>
         <div id="proj-body-techstackimg-container-identifi">
-          <div style={background} />
+          <div style={backgroundTech} />
         </div>
         <div id="proj-body-takeaways-container-identifi">
           <div className="proj-body-title">Takeaways</div>

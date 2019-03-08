@@ -156,6 +156,15 @@
   font-family: 'Abel';
 }
 
+#proj-title-logo {
+  width: 100%;
+  height: 100px;
+  margin: 20px 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .proj-desc-container {
   display: none;
 }
@@ -547,10 +556,13 @@ form input[type='submit'] {
 }
 
 #proj-title-identifi {
-  font-size: 95px;
-  height: 100px;
-  padding-top: 85px;
-  color: white;
+  height: 170px;
+  width: 500px;
+  margin-top: 45px;
+  /* background-image: url('identifi-logo.png'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #proj-button-container-identifi {
@@ -1070,6 +1082,11 @@ form input[type='submit'] {
     margin: 0 0;
   }
 
+  #proj-title-logo {
+    height: 50px;
+    margin: 0 0;
+  }
+
   .proj-desc-container {
     display: block;
     font-family: 'Abel';
@@ -1327,9 +1344,8 @@ form input[type='submit'] {
   }
 
   #proj-title-identifi {
-    font-size: 65px;
-    height: 70px;
-    padding-top: 45px;
+    height: 600px;
+    width: 300px;
   }
 
   #proj-button-container-identifi {

@@ -28,6 +28,7 @@ export const identifi_project = {
   id: 0,
   name: 'identifi',
   image: 'identifi_phone.png',
+  logo: 'identifi-logo.png',
   description:
     'An image recognition and local search mobile application that identifies storefronts with ease',
   mainTech: [reactNative, googleVisionAPI, yelpBusinessAPI, appleMaps],

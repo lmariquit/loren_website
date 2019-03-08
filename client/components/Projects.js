@@ -19,6 +19,7 @@ const Projects = () => {
             color={project.color}
             buttonsArr={project.buttons}
             component={project.component}
+            logo={project.logo}
           />
         ))}
       </div>
