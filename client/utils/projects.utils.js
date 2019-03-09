@@ -72,7 +72,7 @@ export const identifi_project = {
       a:
         'My team wanted to create something that would be useful to consumers. We also wanted to explore a technology outside of the stack that we’ve learned in our bootcamp.',
       b:
-        'To gain inspiration, we spent time walking around the Financial District area of New York City, thinking of ideas that would make our everyday lives as New Yorker’s easier. Come lunch time, we began looking for a place to eat. We wanted to try a resturant that none of us have been to before, but with so many restaurants and so little information about them on hand, we found it difficult to come to a decision.',
+        'To gain inspiration, we spent time walking around the Financial District area of New York City, thinking of ideas that would make our everyday lives as New Yorkers easier. Come lunch time, we began looking for a place to eat. We wanted to try a resturant that none of us have been to before, but with so many restaurants and so little information about them on hand, we found it difficult to come to a decision.',
       c:
         'What helped us was looking for information about each restaurant on Yelp. While it was helpful, it was not the most seamless experience. Finding the restaurant in question required us to type the name into the application and select the correct store from a list of results. Doing this for the numerous restaurants we walked by was very time-consuming and unreliable. So the question from there was how do we create something that was (1) less time consuming and (2) more accurate and reliable.',
       d:
