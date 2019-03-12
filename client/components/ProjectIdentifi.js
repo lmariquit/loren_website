@@ -3,6 +3,7 @@ import React from 'react'
 import SingleTech from './SingleTech'
 import { identifi_project } from '../utils'
 import ProjectButton from './ProjectButton'
+import ProjectTitleAndContent from './ProjectTitleAndContent'
 
 const ProjectIdentifi = () => {
   const {
@@ -17,7 +18,7 @@ const ProjectIdentifi = () => {
     screenshots,
     logo
   } = identifi_project
-  const { objective, inspiration, howitworks, takeaways } = details
+  const { projectDesc, objective, inspiration, howitworks, takeaways } = details
   const backgroundTech = {
     backgroundImage: `url(${techScreen})`
   }
@@ -44,16 +45,17 @@ const ProjectIdentifi = () => {
         </div>
       </div>
       <div id="proj-body-identifi">
+        <div id="proj-body-projectDesc-container-identifi">
+          <ProjectTitleAndContent
+            title={'Project Description'}
+            content={projectDesc}
+          />
+        </div>
         <div id="proj-body-objective-container-identifi">
-          <div className="proj-body-title">Objective</div>
-          <div className="proj-body-content-identifi">{objective}</div>
+          <ProjectTitleAndContent title={'Objective'} content={objective} />
         </div>
         <div id="proj-body-inspiration-identifi-container">
-          <div className="proj-body-title">Inspiration</div>
-          <div className="proj-body-content-identifi">{inspiration.a}</div>
-          <div className="proj-body-content-identifi">{inspiration.b}</div>
-          <div className="proj-body-content-identifi">{inspiration.c}</div>
-          <div className="proj-body-content-identifi">{inspiration.d}</div>
+          <ProjectTitleAndContent title={'Inspiration'} content={inspiration} />
         </div>
         <div id="proj-body-tech-title" className="proj-body-title">
           Technology Used
@@ -66,20 +68,13 @@ const ProjectIdentifi = () => {
           })}
         </div>
         <div id="proj-body-howitworks-container-identifi">
-          <div className="proj-body-title">How it Works</div>
-          <div className="proj-body-content-identifi">{howitworks.a}</div>
-          <div className="proj-body-content-identifi">{howitworks.b}</div>
-          <div className="proj-body-content-identifi">{howitworks.c}</div>
-          <div className="proj-body-content-identifi">{howitworks.d}</div>
+          <ProjectTitleAndContent title={'How it Works'} content={howitworks} />
         </div>
         <div id="proj-body-techstackimg-container-identifi">
           <div style={backgroundTech} />
         </div>
         <div id="proj-body-takeaways-container-identifi">
-          <div className="proj-body-title">Takeaways</div>
-          <div className="proj-body-content-identifi">{takeaways.a}</div>
-          <div className="proj-body-content-identifi">{takeaways.b}</div>
-          <div className="proj-body-content-identifi">{takeaways.c}</div>
+          <ProjectTitleAndContent title={'Takeaways'} content={takeaways} />
         </div>
       </div>
       <a
