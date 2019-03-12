@@ -3,6 +3,7 @@ import React from 'react'
 import SingleTech from './SingleTech'
 import { codingbooks_project } from '../utils'
 import ProjectButton from './ProjectButton'
+import ProjectTitleAndContent from './ProjectTitleAndContent'
 
 const ProjectCodingBooks = () => {
   const {
@@ -15,7 +16,7 @@ const ProjectCodingBooks = () => {
     details,
     screenshots
   } = codingbooks_project
-  const { objective, howitworks, takeaways } = details
+  const { projectDesc, objective, howitworks, takeaways } = details
   return (
     <div id="proj-codingbooks">
       <div id="proj-header-codingbooks" style={color}>
@@ -35,9 +36,14 @@ const ProjectCodingBooks = () => {
         </div>
       </div>
       <div id="proj-body-codingbooks">
+        <div id="proj-body-projectDesc-container-codingbooks">
+          <ProjectTitleAndContent
+            title={'Project Description'}
+            content={projectDesc}
+          />
+        </div>
         <div id="proj-body-objective-container-codingbooks">
-          <div className="proj-body-title">Objective</div>
-          <div className="proj-body-content-codingbooks">{objective}</div>
+          <ProjectTitleAndContent title={'Objective'} content={objective} />
         </div>
         <div id="proj-body-tech-title" className="proj-body-title">
           Technology Used
@@ -50,18 +56,10 @@ const ProjectCodingBooks = () => {
           })}
         </div>
         <div id="proj-body-howitworks-container-codingbooks">
-          <div className="proj-body-title">How it Works</div>
-          <div className="proj-body-content-codingbooks">{howitworks.a}</div>
-          <div className="proj-body-content-codingbooks">{howitworks.b}</div>
-          <div className="proj-body-content-codingbooks">{howitworks.c}</div>
+          <ProjectTitleAndContent title={'How it Works'} content={howitworks} />
         </div>
-        {/* <div id="proj-body-techstackimg-container-codingbooks">
-          <div style={background} />
-        </div> */}
         <div id="proj-body-takeaways-container-codingbooks">
-          <div className="proj-body-title">Takeaways</div>
-          <div className="proj-body-content-codingbooks">{takeaways.a}</div>
-          <div className="proj-body-content-codingbooks">{takeaways.b}</div>
+          <ProjectTitleAndContent title={'Takeaways'} content={takeaways} />
         </div>
       </div>
       <a

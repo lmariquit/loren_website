@@ -142,27 +142,24 @@ export const flufftrainer_project = {
   },
   screenshots: [],
   details: {
-    projectDesc: `FluffTrainer is an audio recording web application that monitors filler-word usage in order to improve a user’s presentation skills by making them aware of the individual’s constant use of unnecessary words. Built with Node.js and deployed to Heroku, FluffTrainer uses the Web Speech API to record a logged-in user's presentation. Using React, it starts a timer and actively counts the number of times filler words are used. The filler words are stored into a Postgres database for future viewing.`,
-    objective:
-      'This project was created during Fullstack Academy’s version of a hack-a-thon (dubbed Stack-a-thon). Every individual were to build an application in a short and strict time limit: a span of 4 days. At its conclusion, we were to present our applications to the entire cohort. We were tasked to explore a new technology outside of the stack that we were trained in and to build something that would be useful or we feel is interesting.',
-    inspiration: {
-      a:
-        'Immediately, I knew I wanted to build something that would help better individuals in some way. Viewing past Stack-a-thon videos for inspiration, I noticed many of the engineers stumbling through their words as they presented their applications. They would use words such as “like,” or “so,” very often, and though their applications were great, some of the "amazement" factor was lost because of a not-so-well-executed presentation.',
-      b:
-        'I also realized that I myself guilty of this very normal human tendency. When I need time to think in the middle of a sentence, I revert to words I know, like “uhh,” “I mean,” and "you know". This was an area I personally wanted to improve upon, as the best presentations are presented with confidence, and confidence is more evident when fluff words are not used.'
-    },
-    howitworks: {
-      a:
-        'Hitting the start button will begin a timer which is run by managing React’s state locally. Using the Web Speech API built into Javascript, the application will begin listening and recording audio through the computer’s microphone. At seven second intervals, the application will take the results and store the entire phrase into a Postgres database if any trigger words were recorded (the trigger words being “like”, “you know”, and “I mean”). The phrase will also be displayed below on the same page. Any phrases recorded where trigger words were meant to be used can be removed from the database simply by hitting the close button to the left of the phrase.',
-      b:
-        'User’s will also be able to view past logs of previous recordings, stored in a Postgres databases. Redux is used to add, get, and remove logs for specific users.'
-    },
-    takeaways: {
-      a:
-        'The main thing I learned from completing this project was the importance of prior planning. Because of the short time limit we were given, I initially felt I had to jump straight into the coding portion of the project. I found very quickly that completing programs this way was not ideal, as I found myself writing code and completely refactoring the same code later on. The resulting program was not as cleanly written as I would have preferred, something that prior planning would have helped avoid.',
-      b:
-        'I also found that the web speech API, though very powerful, was not perfect. If it fails to hear any audio for a certain amount of time, it would just stop listening all together, a known problem throughout the community. My work around was to stop and restart the web speech API every seven seconds using set intervals. Though this does solve the issue of the web speech API shutting down automatically, it creates some gaps where audio is not recorded. This is an issue I will have to consider if using the web speech API in future projects.'
-    }
+    projectDesc: [
+      `FluffTrainer is an audio recording web application that monitors filler-word usage in order to improve a user’s presentation skills by making them aware of the individual’s constant use of unnecessary words. Built with Node.js and deployed to Heroku, FluffTrainer uses the Web Speech API to record a logged-in user's presentation. Using React, it starts a timer and actively counts the number of times filler words are used. The filler words are stored into a Postgres database for future viewing.`
+    ],
+    objective: [
+      `This project was created during Fullstack Academy’s version of a hack-a-thon (dubbed Stack-a-thon). Every individual were to build an application in a short and strict time limit: a span of 4 days. At its conclusion, we were to present our applications to the entire cohort. We were tasked to explore a new technology outside of the stack that we were trained in and to build something that would be useful or we feel is interesting.`
+    ],
+    inspiration: [
+      'Immediately, I knew I wanted to build something that would help better individuals in some way. Viewing past Stack-a-thon videos for inspiration, I noticed many of the engineers stumbling through their words as they presented their applications. They would use words such as “like,” or “so,” very often, and though their applications were great, some of the "amazement" factor was lost because of a not-so-well-executed presentation.',
+      'I also realized that I myself guilty of this very normal human tendency. When I need time to think in the middle of a sentence, I revert to words I know, like “uhh,” “I mean,” and "you know". This was an area I personally wanted to improve upon, as the best presentations are presented with confidence, and confidence is more evident when fluff words are not used.'
+    ],
+    howitworks: [
+      'Hitting the start button will begin a timer which is run by managing React’s state locally. Using the Web Speech API built into Javascript, the application will begin listening and recording audio through the computer’s microphone. At seven second intervals, the application will take the results and store the entire phrase into a Postgres database if any trigger words were recorded (the trigger words being “like”, “you know”, and “I mean”). The phrase will also be displayed below on the same page. Any phrases recorded where trigger words were meant to be used can be removed from the database simply by hitting the close button to the left of the phrase.',
+      'User’s will also be able to view past logs of previous recordings, stored in a Postgres databases. Redux is used to add, get, and remove logs for specific users.'
+    ],
+    takeaways: [
+      'The main thing I learned from completing this project was the importance of prior planning. Because of the short time limit we were given, I initially felt I had to jump straight into the coding portion of the project. I found very quickly that completing programs this way was not ideal, as I found myself writing code and completely refactoring the same code later on. The resulting program was not as cleanly written as I would have preferred, something that prior planning would have helped avoid.',
+      'I also found that the web speech API, though very powerful, was not perfect. If it fails to hear any audio for a certain amount of time, it would just stop listening all together, a known problem throughout the community. My work around was to stop and restart the web speech API every seven seconds using set intervals. Though this does solve the issue of the web speech API shutting down automatically, it creates some gaps where audio is not recorded. This is an issue I will have to consider if using the web speech API in future projects.'
+    ]
   }
 }
 
@@ -208,23 +205,21 @@ export const codingbooks_project = {
   },
   screenshots: [],
   details: {
-    projectDesc: `Coding Books is a production ready e-commerce website featuring various programming books. Built in a Node.js environment, this website presents visitors with products to view, select, add to cart, and ultimately purchase using the Stripe API. The products and user information are stored in a Postgres database. Coding Books was a collaboration amongst four engineers completed in a span of 1.5 weeks, using Git and GitHub extensively and deployed using Heroku.`,
-    objective:
-      'Build a deployed production site where users can browse a list of products, add them to a cart, check them out, and make a payment with a credit card using Stripe. User’s should be able to do this logged in or as guests. This is to be completed in a four man group within 1.5 weeks. We are also to learn how to collaborate on a project use the Version Control System Git and GitHub, along with taking part in standup’s every morning to get used to sharing progress and issues with collaborators.',
-    howitworks: {
-      a:
-        'Entering our website, users will be presented with a home screen, displaying a featured product, one that was selected at random from the selection of books stored in our Postgres database.',
-      b:
-        'User’s can view our entire product selection by selecting ‘Product List’ from the navigation bar up top. Using React on the front end and Redux to manage state, the application will make a get request to our Postgres database to fetch all available products and display them to the users.',
-      c:
-        'User’s may add any product to their cart, either as a logged-in user or a guest. As a guest, the cart will be stored locally on their machine, though stored items will be moved into a user cart in the Postgres database upon login. Payments for products in the cart may be completed with the Stripe API.'
-    },
-    takeaways: {
-      a:
-        'There are many part of building an e-commerce website that make this a great project for all up-in-coming programmers. Aside from focusing on building a more complex CRUD application, we get to focus on authentication, carts, payments, and maybe more importantly, collaboration using the Version Control System Git.',
-      b:
-        'This was my first experience using Git and GitHub to work collaboratively on the same project with multiple engineers. Git was very intimidating at first. Getting familiar with commands is simple enough, but the fear of making a mistake and effecting the other programmers on the team was not easy to overcome. Fortunately, as I became more familiar with Git, and with the help of my fellow teammates of course, I would learn that making errors with Git and GitHub was not easy to do, and any mistakes made were for the most part easy to reverse. It all comes with just sitting down and using the VSC and getting familiar with the technology and recognizing the benefits it provides. After using Git to complete this project, I don’t know how it would have been possible to complete this project collaboratively without it.'
-    }
+    projectDesc: [
+      `Coding Books is a production ready e-commerce website featuring various programming books. Built in a Node.js environment, this website presents visitors with products to view, select, add to cart, and ultimately purchase using the Stripe API. The products and user information are stored in a Postgres database. Coding Books was a collaboration amongst four engineers completed in a span of 1.5 weeks, using Git and GitHub extensively and deployed using Heroku.`
+    ],
+    objective: [
+      'Build a deployed production site where users can browse a list of products, add them to a cart, check them out, and make a payment with a credit card using Stripe. User’s should be able to do this logged in or as guests. This is to be completed in a four man group within 1.5 weeks. We are also to learn how to collaborate on a project use the Version Control System Git and GitHub, along with taking part in standup’s every morning to get used to sharing progress and issues with collaborators.'
+    ],
+    howitworks: [
+      'Entering our website, users will be presented with a home screen, displaying a featured product, one that was selected at random from the selection of books stored in our Postgres database.',
+      'User’s can view our entire product selection by selecting ‘Product List’ from the navigation bar up top. Using React on the front end and Redux to manage state, the application will make a get request to our Postgres database to fetch all available products and display them to the users.',
+      'User’s may add any product to their cart, either as a logged-in user or a guest. As a guest, the cart will be stored locally on their machine, though stored items will be moved into a user cart in the Postgres database upon login. Payments for products in the cart may be completed with the Stripe API.'
+    ],
+    takeaways: [
+      'There are many part of building an e-commerce website that make this a great project for all up-in-coming programmers. Aside from focusing on building a more complex CRUD application, we get to focus on authentication, carts, payments, and maybe more importantly, collaboration using the Version Control System Git.',
+      'This was my first experience using Git and GitHub to work collaboratively on the same project with multiple engineers. Git was very intimidating at first. Getting familiar with commands is simple enough, but the fear of making a mistake and effecting the other programmers on the team was not easy to overcome. Fortunately, as I became more familiar with Git, and with the help of my fellow teammates of course, I would learn that making errors with Git and GitHub was not easy to do, and any mistakes made were for the most part easy to reverse. It all comes with just sitting down and using the VSC and getting familiar with the technology and recognizing the benefits it provides. After using Git to complete this project, I don’t know how it would have been possible to complete this project collaboratively without it.'
+    ]
   }
 }
 

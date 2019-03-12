@@ -3,6 +3,7 @@ import React from 'react'
 import SingleTech from './SingleTech'
 import { flufftrainer_project } from '../utils'
 import ProjectButton from './ProjectButton'
+import ProjectTitleAndContent from './ProjectTitleAndContent'
 
 const ProjectFluffTrainer = () => {
   const {
@@ -15,7 +16,7 @@ const ProjectFluffTrainer = () => {
     details,
     screenshots
   } = flufftrainer_project
-  const { objective, inspiration, howitworks, takeaways } = details
+  const { projectDesc, objective, inspiration, howitworks, takeaways } = details
   return (
     <div id="proj-flufftrainer">
       <div id="proj-header-flufftrainer" style={color}>
@@ -35,14 +36,17 @@ const ProjectFluffTrainer = () => {
         </div>
       </div>
       <div id="proj-body-flufftrainer">
+        <div id="proj-body-projectDesc-container-flufftrainer">
+          <ProjectTitleAndContent
+            title={'Project Description'}
+            content={projectDesc}
+          />
+        </div>
         <div id="proj-body-objective-container-flufftrainer">
-          <div className="proj-body-title">Objective</div>
-          <div className="proj-body-content-flufftrainer">{objective}</div>
+          <ProjectTitleAndContent title={'Objective'} content={objective} />
         </div>
         <div id="proj-body-inspiration-flufftrainer-container">
-          <div className="proj-body-title">Inspiration</div>
-          <div className="proj-body-content-flufftrainer">{inspiration.a}</div>
-          <div className="proj-body-content-flufftrainer">{inspiration.b}</div>
+          <ProjectTitleAndContent title={'Inspiration'} content={inspiration} />
         </div>
         <div id="proj-body-tech-title" className="proj-body-title">
           Technology Used
@@ -55,14 +59,10 @@ const ProjectFluffTrainer = () => {
           })}
         </div>
         <div id="proj-body-howitworks-container-flufftrainer">
-          <div className="proj-body-title">How it Works</div>
-          <div className="proj-body-content-flufftrainer">{howitworks.a}</div>
-          <div className="proj-body-content-flufftrainer">{howitworks.b}</div>
+          <ProjectTitleAndContent title={'How it Works'} content={howitworks} />
         </div>
         <div id="proj-body-takeaways-container-flufftrainer">
-          <div className="proj-body-title">Takeaways</div>
-          <div className="proj-body-content-flufftrainer">{takeaways.a}</div>
-          <div className="proj-body-content-flufftrainer">{takeaways.b}</div>
+          <ProjectTitleAndContent title={'Takeaways'} content={takeaways} />
         </div>
       </div>
       <a
