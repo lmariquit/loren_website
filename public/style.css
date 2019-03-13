@@ -156,6 +156,15 @@
   font-family: 'Abel';
 }
 
+#proj-title-logo {
+  width: 100%;
+  height: 100px;
+  margin: 20px 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .proj-desc-container {
   display: none;
 }
@@ -547,10 +556,13 @@ form input[type='submit'] {
 }
 
 #proj-title-identifi {
-  font-size: 95px;
-  height: 100px;
-  padding-top: 85px;
-  color: white;
+  height: 170px;
+  width: 500px;
+  margin-top: 45px;
+  /* background-image: url('identifi-logo.png'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #proj-button-container-identifi {
@@ -599,6 +611,24 @@ form input[type='submit'] {
   animation: 0.6s ease 0.1s normal forwards 1 fadein;
 }
 
+#proj-body-screenshots-container-identifi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 1400px;
+  width: 100%;
+  margin: 35px 0;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  border-radius: 5px;
+}
+
+#proj-body-screenshots-container-identifi img {
+  height: 700px;
+}
+
 #proj-body-tech-container {
   position: absolute;
   display: flex;
@@ -637,7 +667,7 @@ form input[type='submit'] {
 }
 
 #proj-body-howitworks-container-identifi {
-  margin-top: 1825px;
+  margin-top: 2080px;
 }
 
 #proj-body-techstackimg-container-identifi {
@@ -749,6 +779,24 @@ form input[type='submit'] {
   animation: 0.6s ease 0.1s normal forwards 1 fadein;
 }
 
+#proj-body-screenshots-container-flufftrainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  width: 100%;
+  margin: 35px 0;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  border-radius: 5px;
+}
+
+#proj-body-screenshots-container-flufftrainer img {
+  height: 500px;
+  max-width: 100%;
+}
+
 #proj-body-tech-container {
   position: absolute;
   display: flex;
@@ -787,7 +835,7 @@ form input[type='submit'] {
 }
 
 #proj-body-howitworks-container-flufftrainer {
-  margin-top: 2070px;
+  margin-top: 2240px;
 }
 
 #proj-body-techstackimg-container-flufftrainer {
@@ -903,6 +951,25 @@ form input[type='submit'] {
   animation: 0.6s ease 0.1s normal forwards 1 fadein;
 }
 
+/* HERE */
+#proj-body-screenshots-container-codingbooks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1500px;
+  width: 100%;
+  margin: 35px 0;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  border-radius: 5px;
+}
+
+#proj-body-screenshots-container-codingbooks img {
+  height: 500px;
+  max-width: 100%;
+}
+
 #proj-body-tech-container {
   position: absolute;
   display: flex;
@@ -941,7 +1008,7 @@ form input[type='submit'] {
 }
 
 #proj-body-howitworks-container-codingbooks {
-  margin-top: 1825px;
+  margin-top: 2225px;
 }
 
 #proj-body-techstackimg-container-codingbooks {
@@ -1067,6 +1134,11 @@ form input[type='submit'] {
 
   #proj-title {
     font-size: 35px;
+    margin: 0 0;
+  }
+
+  #proj-title-logo {
+    height: 50px;
     margin: 0 0;
   }
 
@@ -1327,9 +1399,8 @@ form input[type='submit'] {
   }
 
   #proj-title-identifi {
-    font-size: 65px;
-    height: 70px;
-    padding-top: 45px;
+    height: 600px;
+    width: 300px;
   }
 
   #proj-button-container-identifi {
@@ -1355,6 +1426,17 @@ form input[type='submit'] {
     font-size: 20px;
   }
 
+  #proj-body-screenshots-container-identifi {
+    flex-wrap: nowrap;
+    height: 425px;
+    margin: 40px 0;
+    padding: 0 0;
+  }
+
+  #proj-body-screenshots-container-identifi img {
+    height: 400px;
+  }
+
   #proj-body-tech-container {
     flex-direction: row;
     width: 50%;
@@ -1376,7 +1458,7 @@ form input[type='submit'] {
   }
 
   #proj-body-howitworks-container-identifi {
-    margin-top: 505px;
+    margin-top: 565px;
   }
 
   #proj-body-techstackimg-container-identifi {
@@ -1435,6 +1517,19 @@ form input[type='submit'] {
   .proj-body-content-flufftrainer {
     margin-top: 15px;
     font-size: 20px;
+  }
+
+  #proj-body-screenshots-container-flufftrainer {
+    height: 800px;
+    margin: 35px 0;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+  }
+
+  #proj-body-screenshots-container-flufftrainer img {
+    height: 400px;
+    max-width: 90%;
   }
 
   #proj-body-tech-container {
@@ -1519,6 +1614,20 @@ form input[type='submit'] {
     font-size: 20px;
   }
 
+  /* HERE FULL */
+  #proj-body-screenshots-container-codingbooks {
+    height: 1200px;
+    margin: 35px 0;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+  }
+
+  #proj-body-screenshots-container-codingbooks img {
+    height: 400px;
+    max-width: 90%;
+  }
+
   #proj-body-tech-container {
     flex-direction: row;
     width: 50%;
@@ -1542,7 +1651,7 @@ form input[type='submit'] {
   }
 
   #proj-body-howitworks-container-codingbooks {
-    margin-top: 500px;
+    margin-top: 565px;
   }
 
   #proj-body-techstackimg-container-codingbooks {

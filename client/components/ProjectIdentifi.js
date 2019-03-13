@@ -3,6 +3,7 @@ import React from 'react'
 import SingleTech from './SingleTech'
 import { identifi_project } from '../utils'
 import ProjectButton from './ProjectButton'
+import ProjectTitleAndContent from './ProjectTitleAndContent'
 
 const ProjectIdentifi = () => {
   const {
@@ -14,19 +15,23 @@ const ProjectIdentifi = () => {
     buttons,
     details,
     techScreen,
-    screenshots
+    screenshots,
+    logo
   } = identifi_project
-  const { objective, inspiration, howitworks, takeaways } = details
-  const background = {
+  const { projectDesc, objective, inspiration, howitworks, takeaways } = details
+  const backgroundTech = {
     backgroundImage: `url(${techScreen})`
   }
-
+  const backgroundLogo = {
+    backgroundImage: `url(${logo})`
+  }
+  let imgKey = 0
   return (
     <div id="proj-identifi">
       <div id="proj-header-identifi" style={color}>
         <img src={image} />
         <div className="proj-header-platform-identifi" />
-        <div id="proj-title-identifi">{name}</div>
+        <div id="proj-title-identifi" style={backgroundLogo} />
         <div id="proj-button-container-identifi">
           {buttons.map(button => {
             return (
@@ -40,16 +45,22 @@ const ProjectIdentifi = () => {
         </div>
       </div>
       <div id="proj-body-identifi">
+        <div id="proj-body-projectDesc-container-identifi">
+          <ProjectTitleAndContent
+            title={'Project Description'}
+            content={projectDesc}
+          />
+        </div>
+        <div id="proj-body-screenshots-container-identifi" style={color}>
+          {screenshots.map(image => (
+            <img key={imgKey++} src={image} />
+          ))}
+        </div>
         <div id="proj-body-objective-container-identifi">
-          <div className="proj-body-title">Objective</div>
-          <div className="proj-body-content-identifi">{objective}</div>
+          <ProjectTitleAndContent title={'Objective'} content={objective} />
         </div>
         <div id="proj-body-inspiration-identifi-container">
-          <div className="proj-body-title">Inspiration</div>
-          <div className="proj-body-content-identifi">{inspiration.a}</div>
-          <div className="proj-body-content-identifi">{inspiration.b}</div>
-          <div className="proj-body-content-identifi">{inspiration.c}</div>
-          <div className="proj-body-content-identifi">{inspiration.d}</div>
+          <ProjectTitleAndContent title={'Inspiration'} content={inspiration} />
         </div>
         <div id="proj-body-tech-title" className="proj-body-title">
           Technology Used
@@ -62,20 +73,13 @@ const ProjectIdentifi = () => {
           })}
         </div>
         <div id="proj-body-howitworks-container-identifi">
-          <div className="proj-body-title">How it Works</div>
-          <div className="proj-body-content-identifi">{howitworks.a}</div>
-          <div className="proj-body-content-identifi">{howitworks.b}</div>
-          <div className="proj-body-content-identifi">{howitworks.c}</div>
-          <div className="proj-body-content-identifi">{howitworks.d}</div>
+          <ProjectTitleAndContent title={'How it Works'} content={howitworks} />
         </div>
         <div id="proj-body-techstackimg-container-identifi">
-          <div style={background} />
+          <div style={backgroundTech} />
         </div>
         <div id="proj-body-takeaways-container-identifi">
-          <div className="proj-body-title">Takeaways</div>
-          <div className="proj-body-content-identifi">{takeaways.a}</div>
-          <div className="proj-body-content-identifi">{takeaways.b}</div>
-          <div className="proj-body-content-identifi">{takeaways.c}</div>
+          <ProjectTitleAndContent title={'Takeaways'} content={takeaways} />
         </div>
       </div>
       <a

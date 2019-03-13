@@ -134,8 +134,14 @@ export const s3Bucket = {
   image: 'https://s3.amazonaws.com/lm-portfolio/s3_logo.png'
 }
 
+export const heroku = {
+  id: 22,
+  name: 'Heroku',
+  image: 'https://s3.amazonaws.com/lm-portfolio/heroku_logo.png'
+}
+
 export const frontEnd = [javascript, react, redux, html5, css, semanticUI]
 
 export const backEnd = [node, express, sequelize, postgreSQL]
 
-export const other = [git, github, ajax, json, reactNative, webpack]
+export const other = [git, github, ajax, json, reactNative, webpack, heroku]
