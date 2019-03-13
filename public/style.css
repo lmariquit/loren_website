@@ -1520,9 +1520,8 @@ form input[type='submit'] {
 
   #proj-body-screenshots-container-flufftrainer {
     height: 800px;
-    margin: 35px 0;
-    padding-top: 40px;
-    padding-bottom: 25px;
+    margin: 15px 0;
+    padding: 0 0;
     border-radius: 5px;
   }
 
@@ -1616,8 +1615,7 @@ form input[type='submit'] {
   #proj-body-screenshots-container-codingbooks {
     height: 1200px;
     margin: 35px 0;
-    padding-top: 40px;
-    padding-bottom: 25px;
+    padding: 0 0;
     border-radius: 5px;
   }
 

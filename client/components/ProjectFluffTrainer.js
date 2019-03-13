@@ -43,7 +43,7 @@ const ProjectFluffTrainer = () => {
             content={projectDesc}
           />
         </div>
-        <div id="proj-body-screenshots-container-flufftrainer" style={color}>
+        <div id="proj-body-screenshots-container-flufftrainer">
           {screenshots.map(image => (
             <img key={imgKey++} src={image} />
           ))}
