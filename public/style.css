@@ -185,7 +185,7 @@
   flex-direction: column;
   justify-content: flex-end;
   position: absolute;
-  width: 100%;
+  width: 95%;
   height: 500px;
   background-image: linear-gradient(
     rgba(255, 255, 255, 0.123),
