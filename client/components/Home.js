@@ -20,7 +20,7 @@ const Home = () => {
       <div
         id="intro-summary-two"
         className="intro"
-      >{`As a full-stack developer, I aspire to to create programs and tools to help improve the everyday lives of people around the world`}</div>
+      >{`As a full-stack developer, I aspire to to create programs and tools to help improve the everyday lives of people around the world.`}</div>
     </div>
   )
 }
