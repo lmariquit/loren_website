@@ -51,7 +51,7 @@ const ProjectIdentifi = () => {
             content={projectDesc}
           />
         </div>
-        <div id="proj-body-screenshots-container-identifi" style={color}>
+        <div id="proj-body-screenshots-container-identifi">
           {screenshots.map(image => (
             <img key={imgKey++} src={image} />
           ))}

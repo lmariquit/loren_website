@@ -434,12 +434,12 @@ form input[type='submit'] {
   flex-direction: column;
   border-radius: 10px;
   padding: 50px 50px;
-  margin: 50px 10px;
+  margin: 0 10px;
 }
 
 .skills-area {
   text-align: left;
-  font-size: 100px;
+  font-size: 75px;
   font-weight: 700;
   font-family: 'Abel';
   margin-bottom: 10px;
@@ -451,7 +451,7 @@ form input[type='submit'] {
   flex-direction: row;
   align-items: center;
   height: 120px;
-  margin: 35px 0;
+  margin: 15px 0;
 }
 
 .single-skill-image {
@@ -465,7 +465,7 @@ form input[type='submit'] {
 
 .single-skill {
   text-align: left;
-  font-size: 75px;
+  font-size: 60px;
   font-family: 'Abel';
   padding: 0 20px;
 }
@@ -951,7 +951,6 @@ form input[type='submit'] {
   animation: 0.6s ease 0.1s normal forwards 1 fadein;
 }
 
-/* HERE */
 #proj-body-screenshots-container-codingbooks {
   display: flex;
   flex-direction: column;
@@ -1126,7 +1125,14 @@ form input[type='submit'] {
   #proj-img-container img {
     max-width: 85%;
     max-height: 55%;
+    /* transition: max-width 0.05s, max-height 0.05s; */
   }
+
+  /* #single-proj-container:hover #proj-img-container img {
+    max-width: 87.5%;
+    max-height: 57.5%;
+    transition: max-width 0.2s, max-height 0.2s;
+  } */
 
   #proj-info-container {
     align-items: normal;
@@ -1521,9 +1527,8 @@ form input[type='submit'] {
 
   #proj-body-screenshots-container-flufftrainer {
     height: 800px;
-    margin: 35px 0;
-    padding-top: 40px;
-    padding-bottom: 25px;
+    margin: 15px 0;
+    padding: 0 0;
     border-radius: 5px;
   }
 
@@ -1614,12 +1619,10 @@ form input[type='submit'] {
     font-size: 20px;
   }
 
-  /* HERE FULL */
   #proj-body-screenshots-container-codingbooks {
     height: 1200px;
     margin: 35px 0;
-    padding-top: 40px;
-    padding-bottom: 25px;
+    padding: 0 0;
     border-radius: 5px;
   }
 

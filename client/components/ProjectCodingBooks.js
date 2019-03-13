@@ -43,7 +43,7 @@ const ProjectCodingBooks = () => {
             content={projectDesc}
           />
         </div>
-        <div id="proj-body-screenshots-container-codingbooks" style={color}>
+        <div id="proj-body-screenshots-container-codingbooks">
           {screenshots.map(image => (
             <img key={imgKey++} src={image} />
           ))}

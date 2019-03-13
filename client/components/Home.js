@@ -16,14 +16,11 @@ const Home = () => {
       <div
         id="intro-summary-one"
         className="intro"
-      >{`What drives me toward programming are its endless possibilities.`}</div>
+      >{`I am inspired by the endless creative possibilities that programming provides.`}</div>
       <div
         id="intro-summary-two"
         className="intro"
-      >{`Software engineers around the globe are creating new and amazing
-        things every day, and this inspires me to use my own creativity
-        and problem-solving abilities to build programs and tools to
-        help improve and advance the world.`}</div>
+      >{`As a full-stack developer, I aspire to to create programs and tools to help improve the everyday lives of people around the world`}</div>
     </div>
   )
 }
