@@ -15,21 +15,19 @@ const About = () => {
             </div>
             <div id="bio-summary">
               <div className="bio">
-                Before I was a developer, I had a background in finance. Working
-                at an investment bank, I taught myself to program in VBA and
-                would eventually realize that innovation through programming was
-                my passion. I thus decided to shift the direction of my career
-                to focus on creating tools that provide creative solutions to
-                problems around the world.
+                Before I was a developer, I worked in the financial industry as
+                an operations associate. While working at an investment bank, I
+                taught myself to program in VBA, eventually discovering that
+                innovation through programming was my passion.
               </div>
               <div className="bio">
                 In August 2018, I was accepted into Fullstack Academy in New
-                York and have gone through months of rigorous training in
+                York, where I completed a rigorous curriculum in full-stack
                 Javascript and various other technologies pertinent to the tech
-                industry: Node.js, React, Git, GitHub, Express.js, Sequelize,
-                and much more. From here, I hope to join a team as a Fullstack
-                Developer where I can leverage both my passion and skills to
-                continue innovating.
+                industry: Node.js, React, Git, Express.js, Sequelize, and much
+                more. From here, I hope to join a team as a full-stack developer
+                where I can leverage both my passion and skills to continue
+                innovating.
               </div>
             </div>
             <div id="bio-links">
