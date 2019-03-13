@@ -611,6 +611,24 @@ form input[type='submit'] {
   animation: 0.6s ease 0.1s normal forwards 1 fadein;
 }
 
+#proj-body-screenshots-container-identifi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 1400px;
+  width: 100%;
+  margin: 35px 0;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  border-radius: 5px;
+}
+
+#proj-body-screenshots-container-identifi img {
+  height: 700px;
+}
+
 #proj-body-tech-container {
   position: absolute;
   display: flex;
@@ -649,7 +667,7 @@ form input[type='submit'] {
 }
 
 #proj-body-howitworks-container-identifi {
-  margin-top: 1825px;
+  margin-top: 2080px;
 }
 
 #proj-body-techstackimg-container-identifi {
@@ -759,6 +777,25 @@ form input[type='submit'] {
   opacity: 0;
   -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
   animation: 0.6s ease 0.1s normal forwards 1 fadein;
+}
+
+/* HERE */
+#proj-body-screenshots-container-flufftrainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  width: 100%;
+  margin: 35px 0;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  border-radius: 5px;
+}
+
+#proj-body-screenshots-container-flufftrainer img {
+  height: 500px;
+  max-width: 100%;
 }
 
 #proj-body-tech-container {
@@ -1371,6 +1408,17 @@ form input[type='submit'] {
     font-size: 20px;
   }
 
+  #proj-body-screenshots-container-identifi {
+    flex-wrap: nowrap;
+    height: 425px;
+    margin: 40px 0;
+    padding: 0 0;
+  }
+
+  #proj-body-screenshots-container-identifi img {
+    height: 400px;
+  }
+
   #proj-body-tech-container {
     flex-direction: row;
     width: 50%;
@@ -1392,7 +1440,7 @@ form input[type='submit'] {
   }
 
   #proj-body-howitworks-container-identifi {
-    margin-top: 505px;
+    margin-top: 565px;
   }
 
   #proj-body-techstackimg-container-identifi {
@@ -1451,6 +1499,19 @@ form input[type='submit'] {
   .proj-body-content-flufftrainer {
     margin-top: 15px;
     font-size: 20px;
+  }
+
+  #proj-body-screenshots-container-flufftrainer {
+    height: 800px;
+    margin: 35px 0;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+  }
+
+  #proj-body-screenshots-container-flufftrainer img {
+    height: 400px;
+    max-width: 90%;
   }
 
   #proj-body-tech-container {

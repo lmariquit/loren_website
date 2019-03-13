@@ -67,7 +67,11 @@ export const identifi_project = {
     link: '/identifi'
   },
   techScreen: 'identifi_techstack.png',
-  screenshots: [],
+  screenshots: [
+    'identifi_screenshot_a.png',
+    'identifi_screenshot_b.png',
+    'identifi_screenshot_c.png'
+  ],
   details: {
     projectDesc: [
       `identifi is a local-search and image recognition mobile application that retrieves the Yelp information of a business by using a photo taken on a mobile device. identifi was built on React-Native in a Node.js environment and uses the Google Cloud Vision API in conjunction with the Yelp Business Search API, along with a matching algorithm, to return the most accurate result from a taken picture.`
@@ -140,7 +144,10 @@ export const flufftrainer_project = {
     title: 'VIEW PROJECT',
     link: '/FluffTrainer'
   },
-  screenshots: [],
+  screenshots: [
+    'flufftrainer_screenshot_a.png',
+    'flufftrainer_screenshot_b.png'
+  ],
   details: {
     projectDesc: [
       `FluffTrainer is an audio recording web application that monitors filler-word usage in order to improve a user’s presentation skills by making them aware of the individual’s constant use of unnecessary words. Built with Node.js and deployed to Heroku, FluffTrainer uses the Web Speech API to record a logged-in user's presentation. Using React, it starts a timer and actively counts the number of times filler words are used. The filler words are stored into a Postgres database for future viewing.`
@@ -203,7 +210,11 @@ export const codingbooks_project = {
     title: 'VIEW PROJECT',
     link: '/CodingBooks'
   },
-  screenshots: [],
+  screenshots: [
+    'codingbooks_screenshot_a.png',
+    'codingbooks_screenshot_b.png',
+    'codingbooks_screenshot_c.png'
+  ],
   details: {
     projectDesc: [
       `Coding Books is a production ready e-commerce website featuring various programming books. Built in a Node.js environment, this website presents visitors with products to view, select, add to cart, and ultimately purchase using the Stripe API. The products and user information are stored in a Postgres database. Coding Books was a collaboration amongst four engineers completed in a span of 1.5 weeks, using Git and GitHub extensively and deployed using Heroku.`

@@ -51,6 +51,11 @@ const ProjectIdentifi = () => {
             content={projectDesc}
           />
         </div>
+        <div id="proj-body-screenshots-container-identifi" style={color}>
+          {screenshots.map(image => (
+            <img src={image} />
+          ))}
+        </div>
         <div id="proj-body-objective-container-identifi">
           <ProjectTitleAndContent title={'Objective'} content={objective} />
         </div>

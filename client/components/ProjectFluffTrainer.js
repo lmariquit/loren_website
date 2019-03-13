@@ -42,6 +42,11 @@ const ProjectFluffTrainer = () => {
             content={projectDesc}
           />
         </div>
+        <div id="proj-body-screenshots-container-flufftrainer" style={color}>
+          {screenshots.map(image => (
+            <img src={image} />
+          ))}
+        </div>
         <div id="proj-body-objective-container-flufftrainer">
           <ProjectTitleAndContent title={'Objective'} content={objective} />
         </div>
