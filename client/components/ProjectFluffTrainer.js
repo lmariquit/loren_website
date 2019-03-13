@@ -17,6 +17,7 @@ const ProjectFluffTrainer = () => {
     screenshots
   } = flufftrainer_project
   const { projectDesc, objective, inspiration, howitworks, takeaways } = details
+  let imgKey = 0
   return (
     <div id="proj-flufftrainer">
       <div id="proj-header-flufftrainer" style={color}>
@@ -44,7 +45,7 @@ const ProjectFluffTrainer = () => {
         </div>
         <div id="proj-body-screenshots-container-flufftrainer" style={color}>
           {screenshots.map(image => (
-            <img src={image} />
+            <img key={imgKey++} src={image} />
           ))}
         </div>
         <div id="proj-body-objective-container-flufftrainer">

@@ -25,7 +25,7 @@ const ProjectIdentifi = () => {
   const backgroundLogo = {
     backgroundImage: `url(${logo})`
   }
-
+  let imgKey = 0
   return (
     <div id="proj-identifi">
       <div id="proj-header-identifi" style={color}>
@@ -53,7 +53,7 @@ const ProjectIdentifi = () => {
         </div>
         <div id="proj-body-screenshots-container-identifi" style={color}>
           {screenshots.map(image => (
-            <img src={image} />
+            <img key={imgKey++} src={image} />
           ))}
         </div>
         <div id="proj-body-objective-container-identifi">

@@ -17,6 +17,7 @@ const ProjectCodingBooks = () => {
     screenshots
   } = codingbooks_project
   const { projectDesc, objective, howitworks, takeaways } = details
+  let imgKey = 0
   return (
     <div id="proj-codingbooks">
       <div id="proj-header-codingbooks" style={color}>
@@ -41,6 +42,11 @@ const ProjectCodingBooks = () => {
             title={'Project Description'}
             content={projectDesc}
           />
+        </div>
+        <div id="proj-body-screenshots-container-codingbooks" style={color}>
+          {screenshots.map(image => (
+            <img key={imgKey++} src={image} />
+          ))}
         </div>
         <div id="proj-body-objective-container-codingbooks">
           <ProjectTitleAndContent title={'Objective'} content={objective} />
