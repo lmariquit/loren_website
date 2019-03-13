@@ -1125,7 +1125,14 @@ form input[type='submit'] {
   #proj-img-container img {
     max-width: 85%;
     max-height: 55%;
+    /* transition: max-width 0.05s, max-height 0.05s; */
   }
+
+  /* #single-proj-container:hover #proj-img-container img {
+    max-width: 87.5%;
+    max-height: 57.5%;
+    transition: max-width 0.2s, max-height 0.2s;
+  } */
 
   #proj-info-container {
     align-items: normal;
