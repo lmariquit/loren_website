@@ -59,7 +59,7 @@ export const identifi_project = {
     {
       id: 1,
       title: 'SEE GITHUB',
-      link: 'https://github.com/clubjubjub'
+      link: 'https://github.com/identifi-fsa'
     }
   ],
   component: {
