@@ -21,7 +21,9 @@ import {
   webSpeechAPI,
   stripeAPI,
   s3Bucket,
-  heroku
+  heroku,
+  pwa,
+  reactHooks
 } from './skills.utils'
 
 // INDIVIDUAL PROJECTS
@@ -29,6 +31,7 @@ export const identifi_project = {
   id: 0,
   name: 'identifi',
   image: 'identifi_phone.png',
+  imageType: 'mobile',
   logo: 'identifi-logo.png',
   description:
     'An image recognition and local search mobile application that identifies storefronts with ease',
@@ -103,6 +106,7 @@ export const flufftrainer_project = {
   id: 1,
   name: 'FluffTrainer',
   image: 'flufftrainer_screenshot.png',
+  imageType: 'desktop',
   description:
     'An application that will help you eliminate meaningless words and phrases from your presentations',
   mainTech: [react, webSpeechAPI, postgreSQL, semanticUI],
@@ -174,6 +178,7 @@ export const codingbooks_project = {
   id: 2,
   name: 'Coding Books',
   image: 'codingbooks_screenshot.png',
+  imageType: 'desktop',
   description: 'An E-Commerce website with various books for programers.',
   mainTech: [react, redux, postgreSQL, stripeAPI],
   otherTech: [
@@ -234,20 +239,101 @@ export const codingbooks_project = {
   }
 }
 
-export const inprogress_project = {
+export const stopwatch_project = {
   id: 3,
-  name: '',
-  image: '',
-  description: '',
-  tech: [],
-  color: {},
-  buttons: []
+  name: 'stoPWAtch',
+  image: 'stopwatch_screenshot_a.png',
+  imageType: 'mobile',
+  logo: 'stopwatch-logo.png',
+  description:
+    'A stopwatch application built as a Progressive Web App, utilizing React Hooks',
+  mainTech: [pwa, reactHooks],
+  otherTech: [
+    react,
+    javascript,
+    html5,
+    css,
+    node,
+    git,
+    github,
+    webpack,
+    heroku
+  ],
+  color: {
+    backgroundImage:
+      'linear-gradient(to right, rgb(255, 61, 61), rgb(206, 18, 18)'
+  },
+  buttons: [
+    {
+      id: 0,
+      title: 'VISIT WEBSITE',
+      link: 'https://stopwatch-pwa.herokuapp.com/'
+    },
+    {
+      id: 2,
+      title: 'SEE GITHUB',
+      link: 'https://github.com/lmariquit/stopwatchPWA'
+    }
+  ],
+  component: {
+    title: 'VIEW PROJECT',
+    link: '/Stopwatch'
+  },
+  screenshots: [
+    'stopwatch_screenshot_a.png',
+    'stopwatch_screenshot_b.png',
+    'stopwatch_screenshot_c.png'
+  ],
+  screenshots_Hooks: [
+    'stopwatch_screenshot_beforeHooks.png',
+    'stopwatch_screenshot_afterHooks.png'
+  ],
+  details: {
+    projectDesc: [
+      `stoPWAtch is a simple stopwatch application built as a Progressive Web App. The state is managed locally using the new React feature: React Hooks.`,
+      `As a Progressive Web App, users may add the application to their homescreen from a mobile device and may run the application even with the absence of an internet connection. Instructions to do this are provided below. React hooks allow for functional components to "hook" into component lifecycles, allowing us to manage state without the need of a "class" component. The end result is a cleaner, easier to understand component.`,
+      `Basic function of the application are as follows: users may start, pause, and reset the timer.`
+    ],
+    objective: [],
+    inspiration: [
+      `This project was inspired with a couple of ideas in mind:`,
+      `(1) Getting a timer to function accurately`,
+      `(2) Become more familiar with Progressive Web Applications`,
+      `(3) Become more familiar with React Hooks`,
+      `I previously worked on a timer in a previous project I worked on (FluffTrainer) and found that it wasn't as simple as it seems. Due to the limited time I had to complete the previous project, I was unable to get the timer working the way I had hoped, plus it was not the main feature of the application. Therefore, I decided to focus I wanted to take a deeper dive into it for a future project.`,
+      `Progressive Web Applications are web applications that load just like normal websites on the browswer, however, they provide also support offline functionality and push notifications, akin to Native Applications on mobile devices. The quality of these PWA's have improved dramatically over recent years to match the speed and reliability of native applications, so these PWA's will soon have all of the benefits of native applications with the accessilibity of brower applications.`,
+      `PWAs will also dramatically reduce the amount of recources required to build full service web applications. Many companies currently use different teams to build out desktop and mobile versions of an application, and with the mobile versions comes the need to build out two different codebases with different languages for the different operating systems. With PWA's, engineers can use one code base for all versions of the application. With all of these benefits, I believe that PWAs will have a very strong presence in the future of our webpages, and this project serves as my first foree into this new, emerging technology`,
+      `Lastly, with Javascript libraries and frameworks having so much support, there's no surprise that the React team would future improve the quality of its widely-used, beloved framework. Introduced at React Conf 2018, React Hooks allow programmers to use state and other React features without the need for classes. The result is cleaner, easier to read code. In order to gain a better understanding of this new feature, I decided that I would build my project with these React Hooks and face any challenges that may come with it.`
+    ],
+    howitworks: [
+      `In making my timer, the obvious solution was to use the second argument in the setInterval method to increment the miliseconds, seconds, minutes, and hours. I learned quickly however that this method did not provide accurate results. The setInterval method is allowed to lag, so using this to provide display the accurate passage of time is not recomended.`,
+      `The solution was to use the "Date" object at different points of time and track the milisecond differences between them. This resulted in the most accurate calculation of time.`,
+      `The PWA works by registering service upon opening the application. The service workers use cache mechanisms to allow error-free behavior during offline periods. Setting this up was only one of many steps I had to take to turn the application into a PWA. I used the lighthouse audit checker to help meet all of these the requirements.`
+    ],
+    takeaways: [
+      `Though powerful and very useful in many situations, the setInterval method by itself will not give an accurate passage of time. The most accurate way to do this is utilzing the "Date" object. Displaying the time tends to be an important feature in many applications, so this knowledge will prove very useful for future projects I build.`,
+      `In terms of PWAs, this project was only an introduction to it for me. I was able to get the application to register the service worker and program the manifest with logos and colors so that it may function much like a native app. In the future, I want to focus on other features that are commonly seen on native apps, such as swipe navigations, push notifications, etc. This is only the beginning of my adventure into PWAs and I'm excited to see what's next.`,
+      `React Hooks may be intimidating at first, but after carefully studying the documents, it seems much more intuitive and easy to understand as compared to using setState and other class lifecycle methods. I was able to refactor the class component for this application into a functional component in one night. With the addition of these new features, I can see a decreaseing reliance on classes in Javascript.`,
+      `Overall, creating this simple timer was very rewarding. Not only was building it using new techniques and technologies a very enlightening experience, but testing it was also very rewarding and gave me more pride in what I built. I performed real-life testing using this application while I was at the gym, finding what did and what didn't work and constantly brainstorming ways to improved the user experience for the daily user. Down the road, I would like to expand on the features of this application, possibly add authentication to allow users to record "Laps" and have them stored into a database for future viewing. Definitely a project to revisit soon.`
+    ]
+  }
 }
+
+// export const inprogress_project = {
+//   id: 2,
+//   name: '',
+//   image: '',
+//   description: '',
+//   tech: [],
+//   color: {},
+//   buttons: []
+// }
 
 // ALL PROJECTS
 export const projectsArr = [
   identifi_project,
   flufftrainer_project,
   codingbooks_project,
-  inprogress_project
+  stopwatch_project
+  // inprogress_project
 ]

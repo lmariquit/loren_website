@@ -134,8 +134,7 @@
   vertical-align: center;
   max-width: 90%;
   max-height: 90%;
-  object-fit: cover;
-  box-shadow: 0px 0px 35px grey;
+  object-fit: contain;
 }
 
 #proj-info-container {
@@ -1029,6 +1028,182 @@ form input[type='submit'] {
   background-position: center;
 }
 
+/* STOPWATCH */
+#proj-stopwatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Abel';
+}
+
+#proj-header-stopwatch {
+  /* background-image: linear-gradient(
+    to right,
+    rgb(0, 174, 255),
+    rgb(99, 204, 253)
+  ); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1250px;
+  padding: 25px 0;
+  opacity: 0;
+  -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
+  animation: 0.7s ease 0s normal forwards 1 fadein;
+}
+
+#proj-header-stopwatch img {
+  height: 470px;
+  margin-top: 45px;
+  margin-bottom: -45px;
+  z-index: 1;
+}
+
+.proj-header-platform-stopwatch {
+  position: absolute;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.01),
+    rgba(255, 255, 255, 0.25)
+  );
+  width: 890px;
+  border-radius: 99%;
+  height: 100px;
+  top: 625px;
+}
+
+#proj-title-stopwatch {
+  height: 170px;
+  width: 900px;
+  margin-top: 150px;
+  /* background-image: url('stopwatch-logo.png'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#proj-button-container-stopwatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+}
+
+#proj-button-container-stopwatch a {
+  height: 100px;
+  border-radius: 100px;
+  margin: 15px 0;
+}
+
+#proj-button-container-stopwatch .proj-button {
+  text-decoration: none;
+  background-color: none;
+}
+
+.proj-button div {
+  color: white;
+}
+
+#proj-body-stopwatch {
+  margin: 0 5%;
+}
+
+.proj-body-title {
+  font-size: 85px;
+  margin-top: 30px;
+  color: grey;
+  font-weight: bold;
+  opacity: 0;
+  -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
+  animation: 0.7s ease 0s normal forwards 1 fadein;
+}
+
+.proj-body-content-stopwatch {
+  margin-top: 50px;
+  font-size: 50px;
+  opacity: 0;
+  -webkit-animation: 0.6s ease 0.1s normal forwards 1 fadein;
+  animation: 0.6s ease 0.1s normal forwards 1 fadein;
+}
+
+#proj-body-screenshots-container-stopwatch {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 1600px;
+  width: 100%;
+  margin: 35px 0;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  border-radius: 5px;
+}
+
+#proj-body-screenshots-container-stopwatch img {
+  height: 750px;
+  max-width: 100%;
+}
+
+#proj-body-tech-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 20px 0;
+  padding-left: 10%;
+  margin: 40px 0;
+  border-radius: 5px;
+  opacity: 0;
+  -webkit-animation: 0.7s ease 0s normal forwards 1 fadein;
+  animation: 0.7s ease 0s normal forwards 1 fadein;
+}
+
+.single-tech-container {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.single-tech-image {
+  width: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.single-tech {
+  font-size: 50px;
+  padding-left: 50px;
+  padding-top: 11px;
+  color: white;
+}
+
+#proj-body-howitworks-container-stopwatch {
+  margin-top: 1600px;
+}
+
+#proj-body-techstackimg-container-stopwatch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+}
+
+#proj-body-techstackimg-container-stopwatch div {
+  width: 900px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 /* FOR FADE IN */
 
 @keyframes fadein {
@@ -1127,8 +1302,10 @@ form input[type='submit'] {
   }
 
   #proj-img-container img {
-    max-width: 85%;
+    /* max-width: 85%; */
     max-height: 55%;
+    /* background-size: contain; */
+    /* object-fit: contain; */
     /* transition: max-width 0.05s, max-height 0.05s; */
   }
 
@@ -1666,6 +1843,113 @@ form input[type='submit'] {
   }
 
   #proj-body-techstackimg-container-codingbooks div {
+    width: 600px;
+  }
+
+  /* STOPWATCH */
+  #proj-stopwatch {
+    margin-bottom: 40px;
+  }
+
+  #proj-header-stopwatch {
+    height: 600px;
+    /* background-image: linear-gradient(
+      to right,
+      rgb(255, 61, 61), rgb(206, 18, 18)
+    ); */
+  }
+
+  #proj-header-stopwatch img {
+    height: 400px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
+
+  .proj-header-platform-stopwatch {
+    width: 900px;
+    margin-top: 75px;
+    top: 345px;
+  }
+
+  #proj-title-stopwatch {
+    height: 170px;
+    width: 500px;
+    margin-top: 45px;
+    /* background-image: url('identifi-logo.png'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #proj-button-container-stopwatch {
+    flex-direction: row;
+  }
+
+  #proj-button-container-stopwatch a {
+    height: 40px;
+    border-radius: 50px;
+    margin: 0 1%;
+  }
+
+  #proj-body-stopwatch {
+    margin: 0 20%;
+  }
+
+  .proj-body-title {
+    font-size: 35px;
+  }
+
+  .proj-body-content-stopwatch {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  #proj-body-screenshots-container-stopwatch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 380px;
+    margin: 35px 0;
+    padding: 0 0;
+    border-radius: 5px;
+  }
+
+  #proj-body-screenshots-container-stopwatch img {
+    height: 400px;
+    max-width: 90%;
+  }
+
+  #proj-body-tech-container {
+    flex-direction: row;
+    width: 50%;
+    margin: 10px 0;
+  }
+
+  .single-tech-container {
+    height: 50px;
+    width: 50%;
+    margin: 5px 0;
+  }
+
+  .single-tech-image {
+    width: 50px;
+  }
+
+  .single-tech {
+    font-size: 20px;
+    padding-left: 17px;
+    padding-top: 11px;
+  }
+
+  #proj-body-howitworks-container-stopwatch {
+    margin-top: 460px;
+  }
+
+  #proj-body-techstackimg-container-stopwatch {
+    height: 465px;
+  }
+
+  #proj-body-techstackimg-container-stopwatch div {
     width: 600px;
   }
 }

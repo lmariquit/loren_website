@@ -140,8 +140,29 @@ export const heroku = {
   image: 'https://s3.amazonaws.com/lm-portfolio/heroku_logo.png'
 }
 
+export const pwa = {
+  id: 23,
+  name: 'Progressive Web App',
+  image: 'https://s3.amazonaws.com/lm-portfolio/pwa_logo.png'
+}
+
+export const reactHooks = {
+  id: 24,
+  name: 'React Hooks',
+  image: 'https://s3.amazonaws.com/lm-portfolio/react_logo.png'
+}
+
 export const frontEnd = [javascript, react, redux, html5, css, semanticUI]
 
 export const backEnd = [node, express, sequelize, postgreSQL]
 
-export const other = [git, github, ajax, json, reactNative, webpack, heroku]
+export const other = [
+  git,
+  github,
+  ajax,
+  json,
+  reactNative,
+  webpack,
+  heroku,
+  pwa
+]
