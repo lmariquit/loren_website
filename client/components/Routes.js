@@ -8,6 +8,7 @@ import About from './About'
 import ProjectFluffTrainer from './ProjectFluffTrainer'
 import ProjectIdentifi from './ProjectIdentifi'
 import ProjectCodingBooks from './ProjectCodingBooks'
+import ProjectStopwatch from './ProjectStopwatch'
 
 const Routes = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const Routes = () => {
       <Route path="/identifi" component={ProjectIdentifi} />
       <Route path="/FluffTrainer" component={ProjectFluffTrainer} />
       <Route path="/CodingBooks" component={ProjectCodingBooks} />
+      <Route path="/Stopwatch" component={ProjectStopwatch} />
     </Switch>
   )
 }
