@@ -10,12 +10,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('*', function(req, res) {
-  console.log(req.secure)
   res.sendFile(path.join(__dirname, '..', 'public', 'index.html'))
-  if (!req.secure) {
-    res.redirect('https://lorenmariquit.com' + req.url)
-    console.log('REDIRECTING!!', 'https://' + req.headers.host + req.url)
-  }
 })
 
 app.use(function(err, req, res, next) {
