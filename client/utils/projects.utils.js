@@ -284,10 +284,10 @@ export const stopwatch_project = {
     'stopwatch_screenshot_b.png',
     'stopwatch_screenshot_c.png'
   ],
-  screenshots_Hooks: [
-    'stopwatch_screenshot_beforeHooks.png',
-    'stopwatch_screenshot_afterHooks.png'
-  ],
+  // screenshots_hooks: [
+  //   'stopwatch_screenshot_beforeHooks.png',
+  //   'stopwatch_screenshot_afterHooks.png'
+  // ],
   details: {
     projectDesc: [
       `stoPWAtch is a simple stopwatch application built as a Progressive Web App. The state is managed locally using the new React feature: React Hooks.`,
