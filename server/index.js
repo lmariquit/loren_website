@@ -10,7 +10,12 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('*', function(req, res) {
+  console.log(req.secure)
   res.sendFile(path.join(__dirname, '..', 'public', 'index.html'))
+  if (!req.secure) {
+    res.redirect('https://lorenmariquit.com' + req.url)
+    console.log('REDIRECTING!!', 'https://' + req.headers.host + req.url)
+  }
 })
 
 app.use(function(err, req, res, next) {
@@ -21,6 +26,11 @@ app.use(function(err, req, res, next) {
 
 const port = process.env.PORT || 3000
 app.listen(port, function() {
+  console.log(`
+
+  about to listen
+
+  `)
   console.log('Knock, knock')
   console.log("Who's there?")
   console.log(`Your server, listening on port ${port}`)
