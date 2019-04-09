@@ -261,7 +261,7 @@ export const stopwatch_project = {
   ],
   color: {
     backgroundImage:
-      'linear-gradient(to right, rgb(204, 206, 81), rgb(196, 185, 30))'
+      'linear-gradient(to right, rgb(255, 61, 61), rgb(206, 18, 18)'
   },
   buttons: [
     {
