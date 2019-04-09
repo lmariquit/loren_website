@@ -3,6 +3,7 @@ import React from 'react'
 const SingleProject = ({
   title,
   image,
+  imageType,
   description,
   techArr,
   color,
@@ -17,12 +18,20 @@ const SingleProject = ({
     backgroundImage: `url(${logo})`
   }
 
+  const backgroundBoxShadow = {
+    boxShadow: `0px 0px 35px grey`
+  }
+
   if (title) {
     return (
       <div id="proj-section-container">
         <div id="single-proj-container" style={color}>
           <div id="proj-img-container">
-            <img src={image} />
+            {imageType === 'mobile' ? (
+              <img src={image} />
+            ) : (
+              <img src={image} style={backgroundBoxShadow} />
+            )}
           </div>
           <div id="proj-info-container">
             {logo ? (

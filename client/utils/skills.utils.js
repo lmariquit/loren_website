@@ -147,7 +147,7 @@ export const pwa = {
 }
 
 export const reactHooks = {
-  id: 23,
+  id: 24,
   name: 'React Hooks',
   image: 'https://s3.amazonaws.com/lm-portfolio/react_logo.png'
 }

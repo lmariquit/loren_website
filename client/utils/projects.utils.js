@@ -31,6 +31,7 @@ export const identifi_project = {
   id: 0,
   name: 'identifi',
   image: 'identifi_phone.png',
+  imageType: 'mobile',
   logo: 'identifi-logo.png',
   description:
     'An image recognition and local search mobile application that identifies storefronts with ease',
@@ -105,6 +106,7 @@ export const flufftrainer_project = {
   id: 1,
   name: 'FluffTrainer',
   image: 'flufftrainer_screenshot.png',
+  imageType: 'desktop',
   description:
     'An application that will help you eliminate meaningless words and phrases from your presentations',
   mainTech: [react, webSpeechAPI, postgreSQL, semanticUI],
@@ -176,6 +178,7 @@ export const codingbooks_project = {
   id: 2,
   name: 'Coding Books',
   image: 'codingbooks_screenshot.png',
+  imageType: 'desktop',
   description: 'An E-Commerce website with various books for programers.',
   mainTech: [react, redux, postgreSQL, stripeAPI],
   otherTech: [
@@ -240,6 +243,7 @@ export const stopwatch_project = {
   id: 3,
   name: 'stoPWAtch',
   image: 'stopwatch_screenshot_a.png',
+  imageType: 'mobile',
   logo: 'stopwatch-logo.png',
   description:
     'A stopwatch application built as a Progressive Web App, utilizing React Hooks',
